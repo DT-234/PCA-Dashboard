@@ -58,7 +58,7 @@
             min-height: 100vh;
             padding: 1rem;
             transition: var(--transition);
-	        overflow-y: auto; /* Make sure the body can scroll */
+            overflow-y: auto; /* Make sure the body can scroll */
         }
 
         body::before {
@@ -247,7 +247,7 @@
             border-radius: 16px;
             padding: 2rem;
             box-shadow: var(--shadow);
-            /* overflow-y: auto; */ /* Allow scrolling within content area */
+            overflow-y: auto; /* Allow scrolling within content area */
             border: 1px solid var(--border-color);
             /* min-height: 0; */ /* Allow the content area to shrink */
         }
@@ -366,7 +366,7 @@
             min-width: 250px; /* Set a minimum width to prevent over-compression */
             margin: 0; /* Remove possible default margins */
         }
-        /* --- End Of Flexbox Styles --- */
+        /* --- End of Flexbox Styles --- */
 
         /* Search Bar */
         .search-container {
@@ -420,7 +420,7 @@
         .table-container {
             width: 100%; /* Take full width of parent */
             max-width: 100%; /* Make sure the table doesn't overflow the container */
-	    box-sizing: border-box; /* Include padding/border in width calculation */
+            box-sizing: border-box; /* Include padding/border in width calculation */
             overflow-x: auto; /* Horizontal scrolling for wide tables */
             margin: 1rem 0;
             border-radius: 12px;
@@ -579,7 +579,7 @@
             bottom: 10px; /* Place the button 20px from the bottom */
             /* --- ADJUST RIGHT POSITION FOR CIRCULAR BUTTON --- */
             right: 10px; /* Place the button 10px from the right */
-            /* --- End Of ADJUSTMENT --- */
+            /* --- End of ADJUSTMENT --- */
             z-index: 1000; /* Make sure it does not overlap */
             border: none; /* Remove borders */
             outline: none; /* Remove outline */
@@ -594,7 +594,7 @@
             display: flex; /* Use flexbox to center the icon */
             justify-content: center; /* Center horizontally */
             align-items: center; /* Center vertically */
-            /* --- End Of CHANGES --- */
+            /* --- End of CHANGES --- */
             font-size: 18px; /* Icon size */
             box-shadow: var(--shadow); /* Add shadow for depth */
             transition: var(--transition); /* Add smooth transition for hover effects */
@@ -605,14 +605,14 @@
             /* --- OPTIONAL: Slightly enlarge on hover for circular button --- */
             transform: translateY(5px) scale(1.1); /* Push down and slightly enlarge on hover (note: translateY(5px) for bottom button) */
             box-shadow: var(--shadow-lg); /* Larger shadow on hover */
-            /* --- End Of OPTIONAL ENLARGE --- */
+            /* --- End of OPTIONAL ENLARGE --- */
         }
 
         #scrollToBottom i { /* Style the Font Awesome icon inside the button */
             pointer-events: none; /* Ensure clicks go to the button, not the icon */
             /* Icon is now centered by flexbox on the button itself */
         }
-        /* - End Of Scroll to Bottom Button Styles (Circular) - */
+        /* - End of Scroll to Bottom Button Styles (Circular) - */
 
         #backToTop {
             display: none; /* Hidden by default */
@@ -633,7 +633,7 @@
             display: flex; /* Use flexbox to center the icon */
             justify-content: center; /* Center horizontally */
             align-items: center; /* Center vertically */
-            /* --- End Of CHANGES --- */
+            /* --- End of CHANGES --- */
             font-size: 18px; /* Icon size */
             box-shadow: var(--shadow); /* Add shadow for depth */
             transition: var(--transition); /* Add smooth transition for hover effects */
@@ -644,15 +644,15 @@
             /* --- OPTIONAL: Slightly enlarge on hover for circular button --- */
             transform: translateY(-5px) scale(1.1); /* Lift and slightly enlarge on hover */
             box-shadow: var(--shadow-lg); /* Larger shadow on hover */
-            /* --- End Of OPTIONAL ENLARGE --- */
+            /* --- End of OPTIONAL ENLARGE --- */
         }
 
         #backToTop i { /* Style the Font Awesome icon inside the button */
             pointer-events: none; /* Ensure clicks go to the button, not the icon */
             /* Icon is now centered by flexbox on the button itself */
         }
-        /* - End Of Back to Top Button Styles (Circular) - */
-        /* --- End Of Scroll to Bottom and Back to Top Button Styles --- */
+        /* - End of Back to Top Button Styles (Circular) - */
+        /* --- End of Scroll to Bottom and Back to Top Button Styles --- */
 
         /* Toast Notification */
         .toast {
@@ -850,7 +850,7 @@
         .export-btn:active {
             transform: translateY(0);
         }
-        /* --- End Of Export to Excel Bottom Styles --- */
+        /* --- End of Export to Excel Bottom Styles --- */
     </style>
 </head>
 <body>
@@ -889,13 +889,13 @@
                     <div class="dashboard-header">
                         <div class="report-info">
                             <i class="fas fa-clock"></i>
-                            Report auto-generated at 2025-10-13 04:00:01 (GMT+8)
+                            Report auto-generated at 2025-10-31 13:00:01 (GMT+8)
                         </div>
                     </div>
 
                     <div class="total-counter">
                         <i class="fas fa-cube"></i>
-                        Total Instances: <span id="dashboard-total-count">120</span>
+                        Total Instances: <span id="dashboard-total-count">108</span>
                     </div>
 
                     <!-- Graphs Section -->
@@ -911,21 +911,21 @@
                         <div class="graph-container">
                             <div id="instanceDistributionChart" style="width: 100%; height: 100%;"></div>
                         </div>
-                    </div><!-- End Of Graphs Section -->
-                </div><!-- End Of Tab 1: Dashboard Tab -->
+                    </div><!-- End of Graphs Section -->
+                </div><!-- End of Tab 1: Dashboard Tab -->
 
                 <!-- Tab 2: Analytics Tab -->
                 <div id="analytics" class="tab-content">
                     <div class="analytics-header">
                         <div class="report-info">
                             <i class="fas fa-clock"></i>
-                            Report auto-generated at 2025-10-13 04:00:01 (GMT+8)
+                            Report auto-generated at 2025-10-31 13:00:01 (GMT+8)
                         </div>
                     </div>
 
                     <div class="total-counter">
                         <i class="fas fa-cube"></i>
-                        Total Instances: <span id="analytics-total-count">120</span>
+                        Total Instances: <span id="analytics-total-count">108</span>
                     </div>
 
                     <div class="instance-counters">
@@ -962,46 +962,46 @@
             <tr>
                         <td style="font-weight: bold;">FAULT-DOMAIN-1</td>
                         <td style="text-align: right;">368</td>
-                        <td style="text-align: right;">159</td>
-                        <td style="text-align: right;">209</td>
-                        <td style="text-align: right;">56.8%</td>
+                        <td style="text-align: right;">158</td>
+                        <td style="text-align: right;">210</td>
+                        <td style="text-align: right;">57.1%</td>
                         <td style="text-align: right;">2176.00</td>
-                        <td style="text-align: right;">1396.00</td>
-                        <td style="text-align: right;">780.00</td>
-                        <td style="text-align: right;">35.8%</td>
+                        <td style="text-align: right;">1386.00</td>
+                        <td style="text-align: right;">790.00</td>
+                        <td style="text-align: right;">36.3%</td>
                     </tr>
                  <tr>
                         <td style="font-weight: bold;">FAULT-DOMAIN-2</td>
                         <td style="text-align: right;">368</td>
-                        <td style="text-align: right;">186</td>
-                        <td style="text-align: right;">182</td>
-                        <td style="text-align: right;">49.5%</td>
+                        <td style="text-align: right;">177</td>
+                        <td style="text-align: right;">191</td>
+                        <td style="text-align: right;">51.9%</td>
                         <td style="text-align: right;">2176.00</td>
-                        <td style="text-align: right;">1788.00</td>
-                        <td style="text-align: right;">388.00</td>
-                        <td style="text-align: right;">17.8%</td>
+                        <td style="text-align: right;">1686.00</td>
+                        <td style="text-align: right;">490.00</td>
+                        <td style="text-align: right;">22.5%</td>
                     </tr>
                  <tr>
                         <td style="font-weight: bold;">FAULT-DOMAIN-3</td>
                         <td style="text-align: right;">368</td>
-                        <td style="text-align: right;">163</td>
-                        <td style="text-align: right;">205</td>
-                        <td style="text-align: right;">55.7%</td>
+                        <td style="text-align: right;">151</td>
+                        <td style="text-align: right;">217</td>
+                        <td style="text-align: right;">59.0%</td>
                         <td style="text-align: right;">2176.00</td>
-                        <td style="text-align: right;">1450.00</td>
-                        <td style="text-align: right;">726.00</td>
-                        <td style="text-align: right;">33.4%</td>
+                        <td style="text-align: right;">1330.00</td>
+                        <td style="text-align: right;">846.00</td>
+                        <td style="text-align: right;">38.9%</td>
                     </tr>
                  <tr style="background-color: var(--header-bg); font-weight: bold;">
                     <td style="text-align: left;">OVERALL TOTALS (3 FDs)</td>
                     <td style="text-align: right;">1104</td>
-                    <td style="text-align: right;">485</td>
-                    <td style="text-align: right;">619</td>
-                    <td style="text-align: right;">56.1%</td>
+                    <td style="text-align: right;">480</td>
+                    <td style="text-align: right;">624</td>
+                    <td style="text-align: right;">56.5%</td>
                     <td style="text-align: right;">6528.00</td>
-                    <td style="text-align: right;">4392.00</td>
-                    <td style="text-align: right;">2136.00</td>
-                    <td style="text-align: right;">32.7%</td>
+                    <td style="text-align: right;">4342.00</td>
+                    <td style="text-align: right;">2186.00</td>
+                    <td style="text-align: right;">33.5%</td>
                 </tr>
                      </tbody>
                    </table>
@@ -1045,11 +1045,11 @@
                     </tr>
                  <tr>
                         <td style="font-weight: bold;">BumblebeeTenancy</td>
-                        <td style="text-align: right;">47</td>
-                        <td style="text-align: right;">101.0</td>
-                        <td style="text-align: right;">9.1%</td>
-                        <td style="text-align: right;">1066.00</td>
-                        <td style="text-align: right;">16.3%</td>
+                        <td style="text-align: right;">45</td>
+                        <td style="text-align: right;">98.0</td>
+                        <td style="text-align: right;">8.9%</td>
+                        <td style="text-align: right;">1036.00</td>
+                        <td style="text-align: right;">15.9%</td>
                     </tr>
                  <tr>
                         <td style="font-weight: bold;">ClouderaTenancy</td>
@@ -1069,27 +1069,27 @@
                     </tr>
                  <tr>
                         <td style="font-weight: bold;">StarTenancy</td>
-                        <td style="text-align: right;">21</td>
-                        <td style="text-align: right;">72.0</td>
-                        <td style="text-align: right;">6.5%</td>
-                        <td style="text-align: right;">768.00</td>
-                        <td style="text-align: right;">11.8%</td>
+                        <td style="text-align: right;">22</td>
+                        <td style="text-align: right;">76.0</td>
+                        <td style="text-align: right;">6.9%</td>
+                        <td style="text-align: right;">808.00</td>
+                        <td style="text-align: right;">12.4%</td>
                     </tr>
                  <tr>
                         <td style="font-weight: bold;">temptest</td>
-                        <td style="text-align: right;">6</td>
-                        <td style="text-align: right;">6.0</td>
-                        <td style="text-align: right;">0.5%</td>
-                        <td style="text-align: right;">60.00</td>
-                        <td style="text-align: right;">0.9%</td>
+                        <td style="text-align: right;">0</td>
+                        <td style="text-align: right;">0</td>
+                        <td style="text-align: right;">0.0%</td>
+                        <td style="text-align: right;">0.00</td>
+                        <td style="text-align: right;">0.0%</td>
                     </tr>
                  <tr style="background-color: var(--header-bg); font-weight: bold;">
                     <td>OVERALL TOTALS</td>
-                    <td style="text-align: right;">112</td>
-                    <td style="text-align: right;">485.0</td>
-                    <td style="text-align: right;">43.9%</td>
-                    <td style="text-align: right;">4392.00</td>
-                    <td style="text-align: right;">67.3%</td>
+                    <td style="text-align: right;">105</td>
+                    <td style="text-align: right;">480.0</td>
+                    <td style="text-align: right;">43.5%</td>
+                    <td style="text-align: right;">4342.00</td>
+                    <td style="text-align: right;">66.5%</td>
                 </tr>
                      </tbody>
                    </table>
@@ -1101,10 +1101,10 @@
                     <div class="instance-counters">
                         
     <div class="dashboard-flex-container">
-        <div class="card"><h3 class="section-title"><i class="fas fa-bolt"></i> Fault Domains</h3><div class="counter-item">FAULT-DOMAIN-1: <span id="fault-fault_domain_1-count">37</span></div><div class="counter-item">FAULT-DOMAIN-2: <span id="fault-fault_domain_2-count">45</span></div><div class="counter-item">FAULT-DOMAIN-3: <span id="fault-fault_domain_3-count">38</span></div></div>
-        <div class="card"><h3 class="section-title"><i class="fas fa-building"></i> Tenancies</h3><div class="counter-item">AcmeCorpTenancy: <span id="tenancy-acmecorptenancy-count">8</span></div><div class="counter-item">BumblebeeTenancy: <span id="tenancy-bumblebeetenancy-count">48</span></div><div class="counter-item">ClouderaTenancy: <span id="tenancy-clouderatenancy-count">15</span></div><div class="counter-item">DemoTenancy: <span id="tenancy-demotenancy-count">20</span></div><div class="counter-item">StarTenancy: <span id="tenancy-startenancy-count">23</span></div><div class="counter-item">temptest: <span id="tenancy-temptest-count">6</span></div></div>
-        <div class="card"><h3 class="section-title"><i class="fas fa-chart-column"></i> Instance States</h3><div class="counter-item">RUNNING: <span id="state-running-count">97</span></div><div class="counter-item">STARTING: <span id="state-starting-count">2</span></div><div class="counter-item">STOPPED: <span id="state-stopped-count">13</span></div><div class="counter-item">TERMINATED: <span id="state-terminated-count">8</span></div></div>
-        <div class="card"><h3 class="section-title"><i class="fas fa-folder"></i> Compartments</h3><div class="counter-item">[AcmeCorpTenancy] KK_Compartment_1: <span id="compartment-_acmecorptenancy__kk_compartment_1-count">2</span></div><div class="counter-item">[AcmeCorpTenancy] ROOT: <span id="compartment-_acmecorptenancy__root-count">6</span></div><div class="counter-item">[BumblebeeTenancy] Compt_CBP: <span id="compartment-_bumblebeetenancy__compt_cbp-count">2</span></div><div class="counter-item">[BumblebeeTenancy] Compt_Dav: <span id="compartment-_bumblebeetenancy__compt_dav-count">36</span></div><div class="counter-item">[BumblebeeTenancy] Compt_Kit: <span id="compartment-_bumblebeetenancy__compt_kit-count">3</span></div><div class="counter-item">[BumblebeeTenancy] Compt_Muni: <span id="compartment-_bumblebeetenancy__compt_muni-count">2</span></div><div class="counter-item">[BumblebeeTenancy] Compt_PCW: <span id="compartment-_bumblebeetenancy__compt_pcw-count">1</span></div><div class="counter-item">[BumblebeeTenancy] Compt_PCY: <span id="compartment-_bumblebeetenancy__compt_pcy-count">4</span></div><div class="counter-item">[BumblebeeTenancy] ROOT: <span id="compartment-_bumblebeetenancy__root-count">0</span></div><div class="counter-item">[ClouderaTenancy] ROOT: <span id="compartment-_clouderatenancy__root-count">15</span></div><div class="counter-item">[DemoTenancy] Dashboard_demo: <span id="compartment-_demotenancy__dashboard_demo-count">7</span></div><div class="counter-item">[DemoTenancy] ROOT: <span id="compartment-_demotenancy__root-count">0</span></div><div class="counter-item">[DemoTenancy] test_dev: <span id="compartment-_demotenancy__test_dev-count">13</span></div><div class="counter-item">[StarTenancy] DB23aiCompt: <span id="compartment-_startenancy__db23aicompt-count">5</span></div><div class="counter-item">[StarTenancy] InnoDBCompt: <span id="compartment-_startenancy__innodbcompt-count">6</span></div><div class="counter-item">[StarTenancy] ProdCompt: <span id="compartment-_startenancy__prodcompt-count">6</span></div><div class="counter-item">[StarTenancy] ROOT: <span id="compartment-_startenancy__root-count">0</span></div><div class="counter-item">[StarTenancy] Test1Compt: <span id="compartment-_startenancy__test1compt-count">4</span></div><div class="counter-item">[StarTenancy] Test2Compt: <span id="compartment-_startenancy__test2compt-count">2</span></div><div class="counter-item">[temptest] ROOT: <span id="compartment-_temptest__root-count">0</span></div><div class="counter-item">[temptest] oke: <span id="compartment-_temptest__oke-count">6</span></div></div>
+        <div class="card"><h3 class="section-title"><i class="fas fa-bolt"></i> Fault Domains</h3><div class="counter-item">FAULT-DOMAIN-1: <span id="fault-fault_domain_1-count">35</span></div><div class="counter-item">FAULT-DOMAIN-2: <span id="fault-fault_domain_2-count">38</span></div><div class="counter-item">FAULT-DOMAIN-3: <span id="fault-fault_domain_3-count">35</span></div></div>
+        <div class="card"><h3 class="section-title"><i class="fas fa-building"></i> Tenancies</h3><div class="counter-item">AcmeCorpTenancy: <span id="tenancy-acmecorptenancy-count">8</span></div><div class="counter-item">BumblebeeTenancy: <span id="tenancy-bumblebeetenancy-count">48</span></div><div class="counter-item">ClouderaTenancy: <span id="tenancy-clouderatenancy-count">15</span></div><div class="counter-item">DemoTenancy: <span id="tenancy-demotenancy-count">15</span></div><div class="counter-item">StarTenancy: <span id="tenancy-startenancy-count">22</span></div><div class="counter-item">temptest: <span id="tenancy-temptest-count">0</span></div></div>
+        <div class="card"><h3 class="section-title"><i class="fas fa-chart-column"></i> Instance States</h3><div class="counter-item">RUNNING: <span id="state-running-count">90</span></div><div class="counter-item">STARTING: <span id="state-starting-count">2</span></div><div class="counter-item">STOPPED: <span id="state-stopped-count">13</span></div><div class="counter-item">TERMINATED: <span id="state-terminated-count">3</span></div></div>
+        <div class="card"><h3 class="section-title"><i class="fas fa-folder"></i> Compartments</h3><div class="counter-item">[AcmeCorpTenancy] KK_Compartment_1: <span id="compartment-_acmecorptenancy__kk_compartment_1-count">2</span></div><div class="counter-item">[AcmeCorpTenancy] ROOT: <span id="compartment-_acmecorptenancy__root-count">6</span></div><div class="counter-item">[BumblebeeTenancy] Compt_CBP: <span id="compartment-_bumblebeetenancy__compt_cbp-count">2</span></div><div class="counter-item">[BumblebeeTenancy] Compt_Dav: <span id="compartment-_bumblebeetenancy__compt_dav-count">36</span></div><div class="counter-item">[BumblebeeTenancy] Compt_Kit: <span id="compartment-_bumblebeetenancy__compt_kit-count">3</span></div><div class="counter-item">[BumblebeeTenancy] Compt_Muni: <span id="compartment-_bumblebeetenancy__compt_muni-count">2</span></div><div class="counter-item">[BumblebeeTenancy] Compt_PCW: <span id="compartment-_bumblebeetenancy__compt_pcw-count">1</span></div><div class="counter-item">[BumblebeeTenancy] Compt_PCY: <span id="compartment-_bumblebeetenancy__compt_pcy-count">4</span></div><div class="counter-item">[BumblebeeTenancy] ROOT: <span id="compartment-_bumblebeetenancy__root-count">0</span></div><div class="counter-item">[ClouderaTenancy] ROOT: <span id="compartment-_clouderatenancy__root-count">15</span></div><div class="counter-item">[DemoTenancy] Dashboard_demo: <span id="compartment-_demotenancy__dashboard_demo-count">2</span></div><div class="counter-item">[DemoTenancy] ROOT: <span id="compartment-_demotenancy__root-count">0</span></div><div class="counter-item">[DemoTenancy] test_dev: <span id="compartment-_demotenancy__test_dev-count">13</span></div><div class="counter-item">[StarTenancy] DB23aiCompt: <span id="compartment-_startenancy__db23aicompt-count">5</span></div><div class="counter-item">[StarTenancy] InnoDBCompt: <span id="compartment-_startenancy__innodbcompt-count">6</span></div><div class="counter-item">[StarTenancy] ProdCompt: <span id="compartment-_startenancy__prodcompt-count">5</span></div><div class="counter-item">[StarTenancy] ROOT: <span id="compartment-_startenancy__root-count">0</span></div><div class="counter-item">[StarTenancy] Test1Compt: <span id="compartment-_startenancy__test1compt-count">4</span></div><div class="counter-item">[StarTenancy] Test2Compt: <span id="compartment-_startenancy__test2compt-count">2</span></div><div class="counter-item">[temptest] ROOT: <span id="compartment-_temptest__root-count">0</span></div></div>
     </div>
 
                     </div>
@@ -1116,14 +1116,14 @@
                     <div class="instances-header">
                         <div class="report-info">
                             <i class="fas fa-clock"></i>
-                            Report auto-generated at 2025-10-13 04:00:01 (GMT+8)
+                            Report auto-generated at 2025-10-31 13:00:01 (GMT+8)
                         </div>
                     </div>
 
                     <div class="total-counter">
                         <i class="fas fa-cube"></i>
-                        Total Instances: <span id="tab2-total-count">120</span> |
-                            Visible: <span id="tab2-visible-count" style="color: var(--primary); font-weight: bold;">120</span>
+                        Total Instances: <span id="tab2-total-count">108</span> |
+                            Visible: <span id="tab2-visible-count" style="color: var(--primary); font-weight: bold;">108</span>
                     </div>
 
                     <!-- Filter Section -->
@@ -1146,7 +1146,7 @@
                             
     <select id="tab2-tenancy-filter" class="filter-dropdown" onchange="applyTab2Filters()">
         <option value="ALL">All Tenancies</option>
-        <option value="AcmeCorpTenancy">AcmeCorpTenancy (8)</option><option value="BumblebeeTenancy">BumblebeeTenancy (48)</option><option value="ClouderaTenancy">ClouderaTenancy (15)</option><option value="DemoTenancy">DemoTenancy (20)</option><option value="StarTenancy">StarTenancy (23)</option><option value="temptest">temptest (6)</option>
+        <option value="AcmeCorpTenancy">AcmeCorpTenancy (8)</option><option value="BumblebeeTenancy">BumblebeeTenancy (48)</option><option value="ClouderaTenancy">ClouderaTenancy (15)</option><option value="DemoTenancy">DemoTenancy (15)</option><option value="StarTenancy">StarTenancy (22)</option>
     </select>
                             <select id="tab2-compartment-filter" class="filter-dropdown" onchange="applyTab2Filters()">
     <option value="ALL">All Compartments</option>
@@ -1181,7 +1181,6 @@
     </optgroup>
     <optgroup label="temptest">
         <option value="ROOT" data-tenancy="temptest">ROOT</option>
-        <option value="oke" data-tenancy="temptest">oke</option>
     </optgroup>
 </select>
                             <select id="tab2-fault-domain-filter" class="filter-dropdown" onchange="applyTab2Filters()">
@@ -1211,17 +1210,11 @@
         <option value="FAULT-DOMAIN-2" data-tenancy="StarTenancy">FAULT-DOMAIN-2</option>
         <option value="FAULT-DOMAIN-3" data-tenancy="StarTenancy">FAULT-DOMAIN-3</option>
     </optgroup>
-    <optgroup label="temptest">
-        <option value="FAULT-DOMAIN-1" data-tenancy="temptest">FAULT-DOMAIN-1</option>
-        <option value="FAULT-DOMAIN-2" data-tenancy="temptest">FAULT-DOMAIN-2</option>
-        <option value="FAULT-DOMAIN-3" data-tenancy="temptest">FAULT-DOMAIN-3</option>
-    </optgroup>
 </select>
                             <button onclick="resetTab2Filters()" style="padding: 8px 12px; margin: 5px; background: var(--danger); color: white; border: none; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-redo"></i> Reset All Filters</button>
                             <button onclick="exportInstancesToExcel()" style="padding: 8px 12px; margin: 5px; background: var(--success); color: white; border: none; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem;">
                                 <i class="fas fa-file-excel"></i> Export to Excel
                             </button>
-                    </div>
                         </div>
                     </div>
 
@@ -1321,7 +1314,13 @@
                         data-state="RUNNING"
                         data-fault-domain="FAULT-DOMAIN-1"
                         data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.c7g13o9oy6abg2sqc8wxwvsi47abmtxacm3ibk0n48ha5k6uzh677kerbp49"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>oel9</td><td>RUNNING</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:38:09:24</td><td>10.0.2.3</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-04</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.c7g13o9oy6abg2sqc8wxwvsi47abmtxacm3ibk0n48ha5k6uzh677kerbp49</td></tr>
+                        data-instance-id="ocid1.instance.AK03317140.pcax10.acma4cb2ef7gtnzpz5oygwgo2ckf8d0j1q4878x6x4fnu3ul34884178i75j"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>oel9</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:82:97:fe</td><td>10.0.2.3</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-22</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.acma4cb2ef7gtnzpz5oygwgo2ckf8d0j1q4878x6x4fnu3ul34884178i75j</td></tr>
+<tr class='instance-row' data-tenancy="BumblebeeTenancy"
+                        data-compartment="Compt_Dav"
+                        data-state="TERMINATED"
+                        data-fault-domain="FAULT-DOMAIN-3"
+                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
+                        data-instance-id="ocid1.instance.AK03317140.pcax10.rh1c84cwetzxjxn8bpvgtblq20n0myviin7sutgwlco2hmva914tfl0lbc8j"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>oel9-dbsi</td><td>TERMINATED</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>N/A</td><td>N/A</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-30</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.rh1c84cwetzxjxn8bpvgtblq20n0myviin7sutgwlco2hmva914tfl0lbc8j</td></tr>
 <tr class='instance-row' data-tenancy="BumblebeeTenancy"
                         data-compartment="Compt_Dav"
                         data-state="RUNNING"
@@ -1498,22 +1497,16 @@
                         data-instance-id="ocid1.instance.AK03317140.pcax10.eog8xoalc6ylp7fstya0wmpo68enzdyf9bj8xugepcggtw2z0yplimpkwuu1"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2025-std-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:39:75:d9</td><td>10.0.2.26</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.eog8xoalc6ylp7fstya0wmpo68enzdyf9bj8xugepcggtw2z0yplimpkwuu1</td></tr>
 <tr class='instance-row' data-tenancy="BumblebeeTenancy"
                         data-compartment="Compt_Dav"
-                        data-state="RUNNING"
+                        data-state="TERMINATED"
                         data-fault-domain="FAULT-DOMAIN-3"
                         data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.roq4xeel673yzhau72vhmkdnsgw9u5my0oapdu0sa8n53qte9ge1vx7pngat"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>rsync-node1</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:0c:48:45</td><td>10.0.2.27</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-10</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.roq4xeel673yzhau72vhmkdnsgw9u5my0oapdu0sa8n53qte9ge1vx7pngat</td></tr>
-<tr class='instance-row' data-tenancy="BumblebeeTenancy"
-                        data-compartment="Compt_Dav"
-                        data-state="RUNNING"
-                        data-fault-domain="FAULT-DOMAIN-1"
-                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.tuek1tetlo7b3uf060eepayo0tc6y5282gpyj7v3ppw51r57wczj0u3mmrqm"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>rsync-node2</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:4d:3d:55</td><td>10.0.2.35</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-10</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.tuek1tetlo7b3uf060eepayo0tc6y5282gpyj7v3ppw51r57wczj0u3mmrqm</td></tr>
+                        data-instance-id="ocid1.instance.AK03317140.pcax10.roq4xeel673yzhau72vhmkdnsgw9u5my0oapdu0sa8n53qte9ge1vx7pngat"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>rsync-node1</td><td>TERMINATED</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>N/A</td><td>N/A</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-10</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.roq4xeel673yzhau72vhmkdnsgw9u5my0oapdu0sa8n53qte9ge1vx7pngat</td></tr>
 <tr class='instance-row' data-tenancy="BumblebeeTenancy"
                         data-compartment="Compt_Dav"
                         data-state="TERMINATED"
-                        data-fault-domain="FAULT-DOMAIN-2"
+                        data-fault-domain="FAULT-DOMAIN-1"
                         data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.evf9om4l91y4mss35dyi97uzkp7f3ylqajlzvpg9daktj959gg8hqql1mcuz"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>test20251013</td><td>TERMINATED</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>N/A</td><td>N/A</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-13</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.evf9om4l91y4mss35dyi97uzkp7f3ylqajlzvpg9daktj959gg8hqql1mcuz</td></tr>
+                        data-instance-id="ocid1.instance.AK03317140.pcax10.tuek1tetlo7b3uf060eepayo0tc6y5282gpyj7v3ppw51r57wczj0u3mmrqm"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>rsync-node2</td><td>TERMINATED</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>N/A</td><td>N/A</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-10</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.tuek1tetlo7b3uf060eepayo0tc6y5282gpyj7v3ppw51r57wczj0u3mmrqm</td></tr>
 <tr class='instance-row' data-tenancy="BumblebeeTenancy"
                         data-compartment="Compt_Kit"
                         data-state="RUNNING"
@@ -1677,36 +1670,6 @@
                         data-compartment-id="ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm"
                         data-instance-id="ocid1.instance.AK03317140.pcax10.235rmqh9odmgimn1fvoga63yx4i4o0ug2rn5jqg5vhgb5qu78u5mqlrmlaqo"><td>DemoTenancy</td><td>Dashboard_demo</td><td>Silver</td><td>RUNNING</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:2a:45:a6</td><td>192.168.2.2</td><td>10.1.102.84</td><td>RESTORE_INSTANCE</td><td>2025-08-07</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm</td><td>ocid1.instance.AK03317140.pcax10.235rmqh9odmgimn1fvoga63yx4i4o0ug2rn5jqg5vhgb5qu78u5mqlrmlaqo</td></tr>
 <tr class='instance-row' data-tenancy="DemoTenancy"
-                        data-compartment="Dashboard_demo"
-                        data-state="TERMINATED"
-                        data-fault-domain="FAULT-DOMAIN-2"
-                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.26r1thtbk9dubbpwcu4elrbghddegwrwmbc44q4l1abgayqngyqzb8bk4juj"><td>DemoTenancy</td><td>Dashboard_demo</td><td>TestVM</td><td>TERMINATED</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>N/A</td><td>N/A</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-13</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm</td><td>ocid1.instance.AK03317140.pcax10.26r1thtbk9dubbpwcu4elrbghddegwrwmbc44q4l1abgayqngyqzb8bk4juj</td></tr>
-<tr class='instance-row' data-tenancy="DemoTenancy"
-                        data-compartment="Dashboard_demo"
-                        data-state="TERMINATED"
-                        data-fault-domain="FAULT-DOMAIN-2"
-                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.ocmju9ud3zla55bx4gwc4xblx595amerr4c7372oo5nl8l9io1sh39ska5to"><td>DemoTenancy</td><td>Dashboard_demo</td><td>TestVM1-ballast</td><td>TERMINATED</td><td>2.0</td><td>32.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>N/A</td><td>N/A</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-13</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm</td><td>ocid1.instance.AK03317140.pcax10.ocmju9ud3zla55bx4gwc4xblx595amerr4c7372oo5nl8l9io1sh39ska5to</td></tr>
-<tr class='instance-row' data-tenancy="DemoTenancy"
-                        data-compartment="Dashboard_demo"
-                        data-state="TERMINATED"
-                        data-fault-domain="FAULT-DOMAIN-2"
-                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.1a2meu080dbhq5a60edp3wuyvolg3ciyealazuq7tdcr6sxhby3zbcnl02mn"><td>DemoTenancy</td><td>Dashboard_demo</td><td>TestVM2</td><td>TERMINATED</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>N/A</td><td>N/A</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-13</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm</td><td>ocid1.instance.AK03317140.pcax10.1a2meu080dbhq5a60edp3wuyvolg3ciyealazuq7tdcr6sxhby3zbcnl02mn</td></tr>
-<tr class='instance-row' data-tenancy="DemoTenancy"
-                        data-compartment="Dashboard_demo"
-                        data-state="TERMINATED"
-                        data-fault-domain="FAULT-DOMAIN-3"
-                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.flds1y8g32po28bokb1kgc38p67nu7jv6et1soueeqrr0z3xmu4w2ibubxg4"><td>DemoTenancy</td><td>Dashboard_demo</td><td>tsvm1</td><td>TERMINATED</td><td>8.0</td><td>80.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>N/A</td><td>N/A</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-13</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm</td><td>ocid1.instance.AK03317140.pcax10.flds1y8g32po28bokb1kgc38p67nu7jv6et1soueeqrr0z3xmu4w2ibubxg4</td></tr>
-<tr class='instance-row' data-tenancy="DemoTenancy"
-                        data-compartment="Dashboard_demo"
-                        data-state="TERMINATED"
-                        data-fault-domain="FAULT-DOMAIN-3"
-                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.3piqqkcqs9dpvcdzdafh9ijqnjd9xs0jt26itmpg841q0cyk8unuejwir11w"><td>DemoTenancy</td><td>Dashboard_demo</td><td>tsvm2</td><td>TERMINATED</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>N/A</td><td>N/A</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-13</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm</td><td>ocid1.instance.AK03317140.pcax10.3piqqkcqs9dpvcdzdafh9ijqnjd9xs0jt26itmpg841q0cyk8unuejwir11w</td></tr>
-<tr class='instance-row' data-tenancy="DemoTenancy"
                         data-compartment="test_dev"
                         data-state="RUNNING"
                         data-fault-domain="FAULT-DOMAIN-2"
@@ -1852,12 +1815,6 @@
                         data-instance-id="ocid1.instance.AK03317140.pcax10.1fuix9rk1eiyj98v831mskgsb3rh9638t1qce5z5axe3588v38u7orhlb549"><td>StarTenancy</td><td>InnoDBCompt</td><td>mysql03</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:53:e0:10</td><td>192.168.151.4</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-05-30</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.wvrxl1wgtpe8u1lyssbwwwqdy6tyosrg3b936x6qy5izw3uu2yvv88w72rf5</td><td>ocid1.instance.AK03317140.pcax10.1fuix9rk1eiyj98v831mskgsb3rh9638t1qce5z5axe3588v38u7orhlb549</td></tr>
 <tr class='instance-row' data-tenancy="StarTenancy"
                         data-compartment="ProdCompt"
-                        data-state="TERMINATED"
-                        data-fault-domain="FAULT-DOMAIN-2"
-                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.c2qs0n8hq010tw6egc5zxfig3shwzlggi3zeoggpgsb8fzq5eaci7q2dpvvm"><td>StarTenancy</td><td>ProdCompt</td><td>mytest</td><td>TERMINATED</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>N/A</td><td>N/A</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-13</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm</td><td>ocid1.instance.AK03317140.pcax10.c2qs0n8hq010tw6egc5zxfig3shwzlggi3zeoggpgsb8fzq5eaci7q2dpvvm</td></tr>
-<tr class='instance-row' data-tenancy="StarTenancy"
-                        data-compartment="ProdCompt"
                         data-state="RUNNING"
                         data-fault-domain="FAULT-DOMAIN-1"
                         data-compartment-id="ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm"
@@ -1870,10 +1827,10 @@
                         data-instance-id="ocid1.instance.AK03317140.pcax10.99d1z737qnz96e8q2co02x835hdioq91vw7ltmykaccns9m4gx211renp5ns"><td>StarTenancy</td><td>ProdCompt</td><td>prodvm2</td><td>RUNNING</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:8f:a9:6b</td><td>192.168.251.2</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-04-30</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm</td><td>ocid1.instance.AK03317140.pcax10.99d1z737qnz96e8q2co02x835hdioq91vw7ltmykaccns9m4gx211renp5ns</td></tr>
 <tr class='instance-row' data-tenancy="StarTenancy"
                         data-compartment="ProdCompt"
-                        data-state="TERMINATED"
+                        data-state="RUNNING"
                         data-fault-domain="FAULT-DOMAIN-2"
                         data-compartment-id="ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.bmztrifri6x0vzp424e1trzpldcji32ox5ou0f5q9lyh0ifvrrqyplh00c89"><td>StarTenancy</td><td>ProdCompt</td><td>TSVM1</td><td>TERMINATED</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>N/A</td><td>N/A</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-13</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm</td><td>ocid1.instance.AK03317140.pcax10.bmztrifri6x0vzp424e1trzpldcji32ox5ou0f5q9lyh0ifvrrqyplh00c89</td></tr>
+                        data-instance-id="ocid1.instance.AK03317140.pcax10.myhw3ad9otj9hn5um72tw0bh3ob6p06hu81fgyekdebsesqzwjxb0644r5ii"><td>StarTenancy</td><td>ProdCompt</td><td>vm101301</td><td>RUNNING</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:9f:d3:2a</td><td>192.168.251.4</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-13</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm</td><td>ocid1.instance.AK03317140.pcax10.myhw3ad9otj9hn5um72tw0bh3ob6p06hu81fgyekdebsesqzwjxb0644r5ii</td></tr>
 <tr class='instance-row' data-tenancy="StarTenancy"
                         data-compartment="ProdCompt"
                         data-state="RUNNING"
@@ -1922,57 +1879,21 @@
                         data-fault-domain="FAULT-DOMAIN-1"
                         data-compartment-id="ocid1.compartment.AK03317140.pcax10.yglfpjiqxkasuckztliqfmsy6b8tsly78lvr1f0lhyjk3xx6jw5h68pshrqg"
                         data-instance-id="ocid1.instance.AK03317140.pcax10.v92eslegrh0pvd1gym150l56ho0he74ughoibkwwwhr7d4leai9ocu6dmd5t"><td>StarTenancy</td><td>Test2Compt</td><td>vm2</td><td>STOPPED</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:48:b8:fa</td><td>192.168.247.2</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-05-02</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.yglfpjiqxkasuckztliqfmsy6b8tsly78lvr1f0lhyjk3xx6jw5h68pshrqg</td><td>ocid1.instance.AK03317140.pcax10.v92eslegrh0pvd1gym150l56ho0he74ughoibkwwwhr7d4leai9ocu6dmd5t</td></tr>
-<tr class='instance-row' data-tenancy="temptest"
-                        data-compartment="oke"
-                        data-state="RUNNING"
-                        data-fault-domain="FAULT-DOMAIN-3"
-                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.nrruva0wp3otgnwfd9tldkxr9d7dacyz0tbefxscmkzket4zqhyhl1uawpj6"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.vlr1mmjpl7gjboaih2fshm7sy5swwts2tykkm8wdl9wvz81zez1o9rtu785h"><td>temptest</td><td>oke</td><td>oke-640a7f9438ec45f2b316ec2e1c586f8e-control-plane-jsv5k</td><td>RUNNING</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:3e:25:73</td><td>172.31.252.231</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-25</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.nrruva0wp3otgnwfd9tldkxr9d7dacyz0tbefxscmkzket4zqhyhl1uawpj6</td><td>ocid1.instance.AK03317140.pcax10.vlr1mmjpl7gjboaih2fshm7sy5swwts2tykkm8wdl9wvz81zez1o9rtu785h</td></tr>
-<tr class='instance-row' data-tenancy="temptest"
-                        data-compartment="oke"
-                        data-state="RUNNING"
-                        data-fault-domain="FAULT-DOMAIN-2"
-                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.nrruva0wp3otgnwfd9tldkxr9d7dacyz0tbefxscmkzket4zqhyhl1uawpj6"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.wgrxvobx9sqgkouqmaau54sbpu5b22jp4adyfeq4bo3xdpkxw9r5yzkrcl9r"><td>temptest</td><td>oke</td><td>oke-640a7f9438ec45f2b316ec2e1c586f8e-control-plane-lgqql</td><td>RUNNING</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:34:4c:6e</td><td>172.31.252.229</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-25</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.nrruva0wp3otgnwfd9tldkxr9d7dacyz0tbefxscmkzket4zqhyhl1uawpj6</td><td>ocid1.instance.AK03317140.pcax10.wgrxvobx9sqgkouqmaau54sbpu5b22jp4adyfeq4bo3xdpkxw9r5yzkrcl9r</td></tr>
-<tr class='instance-row' data-tenancy="temptest"
-                        data-compartment="oke"
-                        data-state="RUNNING"
-                        data-fault-domain="FAULT-DOMAIN-1"
-                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.nrruva0wp3otgnwfd9tldkxr9d7dacyz0tbefxscmkzket4zqhyhl1uawpj6"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.k7d81ulcn645eb6buh1mkl9jiy3amfoyiu912k0l5nu2x6qrw30tuf85izzx"><td>temptest</td><td>oke</td><td>oke-640a7f9438ec45f2b316ec2e1c586f8e-control-plane-s85wb</td><td>RUNNING</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:0c:72:7e</td><td>172.31.252.230</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-25</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.nrruva0wp3otgnwfd9tldkxr9d7dacyz0tbefxscmkzket4zqhyhl1uawpj6</td><td>ocid1.instance.AK03317140.pcax10.k7d81ulcn645eb6buh1mkl9jiy3amfoyiu912k0l5nu2x6qrw30tuf85izzx</td></tr>
-<tr class='instance-row' data-tenancy="temptest"
-                        data-compartment="oke"
-                        data-state="RUNNING"
-                        data-fault-domain="FAULT-DOMAIN-2"
-                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.nrruva0wp3otgnwfd9tldkxr9d7dacyz0tbefxscmkzket4zqhyhl1uawpj6"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.6m0ig44ls4yhskubq8qxhur4kzkwhuafg00h3bfs9jlzh61w6ly2bext8ik2"><td>temptest</td><td>oke</td><td>oke-c58754465c12426d84459cdc3b53913f-control-plane-2j6dr</td><td>RUNNING</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:7b:b6:30</td><td>172.31.252.228</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-18</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.nrruva0wp3otgnwfd9tldkxr9d7dacyz0tbefxscmkzket4zqhyhl1uawpj6</td><td>ocid1.instance.AK03317140.pcax10.6m0ig44ls4yhskubq8qxhur4kzkwhuafg00h3bfs9jlzh61w6ly2bext8ik2</td></tr>
-<tr class='instance-row' data-tenancy="temptest"
-                        data-compartment="oke"
-                        data-state="RUNNING"
-                        data-fault-domain="FAULT-DOMAIN-3"
-                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.nrruva0wp3otgnwfd9tldkxr9d7dacyz0tbefxscmkzket4zqhyhl1uawpj6"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.tw45oi6ipbn1coq3u4i0zk2oo4s2nlm7ogs35k5hq8b0tws3zzyyu0ltr07a"><td>temptest</td><td>oke</td><td>oke-c58754465c12426d84459cdc3b53913f-control-plane-6lpmz</td><td>RUNNING</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:94:79:10</td><td>172.31.252.226</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-18</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.nrruva0wp3otgnwfd9tldkxr9d7dacyz0tbefxscmkzket4zqhyhl1uawpj6</td><td>ocid1.instance.AK03317140.pcax10.tw45oi6ipbn1coq3u4i0zk2oo4s2nlm7ogs35k5hq8b0tws3zzyyu0ltr07a</td></tr>
-<tr class='instance-row' data-tenancy="temptest"
-                        data-compartment="oke"
-                        data-state="RUNNING"
-                        data-fault-domain="FAULT-DOMAIN-1"
-                        data-compartment-id="ocid1.compartment.AK03317140.pcax10.nrruva0wp3otgnwfd9tldkxr9d7dacyz0tbefxscmkzket4zqhyhl1uawpj6"
-                        data-instance-id="ocid1.instance.AK03317140.pcax10.em4m8938ndcbslk10s5wyairqq705yfuakkhsnk3prhnrg648w1tcgc22mpj"><td>temptest</td><td>oke</td><td>oke-c58754465c12426d84459cdc3b53913f-control-plane-sxr98</td><td>RUNNING</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:b2:cc:0c</td><td>172.31.252.227</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-18</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.nrruva0wp3otgnwfd9tldkxr9d7dacyz0tbefxscmkzket4zqhyhl1uawpj6</td><td>ocid1.instance.AK03317140.pcax10.em4m8938ndcbslk10s5wyairqq705yfuakkhsnk3prhnrg648w1tcgc22mpj</td></tr>
 </tbody>
                         </table>
                     </div>
-                </div><!-- End Of Tab 3: Instances Tab -->
-            </div><!-- End Of content-area -->
-        </div><!-- End Of main-content -->
-    </div><!-- End Of app-container -->
+                </div><!-- End of Tab 3: Instances Tab -->
+            </div><!-- End of content-area -->
+        </div><!-- End of main-content -->
+    </div><!-- End of app-container -->
 
                     <!-- Back to Top Button (MOVED INSIDE content-area) -->
                     <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-                    <!-- End Of Back to Top Button -->
+                    <!-- End of Back to Top Button -->
 
                     <!-- Scroll to Bottom Button (ADDED INSIDE content-area) -->
                     <button id="scrollToBottom" title="Go to bottom"><i class="fas fa-arrow-down"></i></button>
-                    <!-- End Of Scroll to Bottom Button -->
+                    <!-- End of Scroll to Bottom Button -->
 
     <!-- Toast Notification -->
     <div class="toast" id="toast">
@@ -2119,7 +2040,7 @@
             const minutes = String(now.getMinutes()).padStart(2, '0');
             return `${year}${month}${day}_${hours}${minutes}`;
         }
-        // --- End Of Export To Excel Logic ---
+        // --- End of Export To Excel Logic ---
 
         // --- Toast Notification ---
         function showToast(message) {
@@ -2257,7 +2178,7 @@
                 showToast('导出Excel时出错，请重试');
             }
         }
-        // --- End Of Tab 2 Export To Excel Logic ---
+        // --- End of Tab 2 Export To Excel Logic ---
 
         // --- Tab 3 Export To Excel Logic ---
         function exportInstancesToExcel() {
@@ -2316,7 +2237,7 @@
                 showToast('导出实例Excel时出错，请重试');
             }
         }
-        // --- End Of Tab 3 Export To Excel Logic ---
+        // --- End of Tab 3 Export To Excel Logic ---
 
         // --- Back to Top Button Logic ---
         let backToTopButton = document.getElementById("backToTop");
@@ -2338,15 +2259,35 @@
             });
         }
 
-        // 设置滚动监听
-        window.addEventListener('scroll', scrollFunction);
-
-        // 初始隐藏按钮
         document.addEventListener('DOMContentLoaded', function() {
-            backToTopButton.style.display = "none";
-            scrollFunction(); // 初始检查
+          const contentArea = document.querySelector('.content-area');
+          const backToTopButton = document.getElementById('backToTop');
+          const scrollToBottomButton = document.getElementById('scrollToBottom');
+
+          if (!contentArea) return;
+
+          function scrollFunction() {
+            const { scrollTop, scrollHeight, clientHeight } = contentArea;
+            backToTopButton.style.display = scrollTop > 100 ? 'flex' : 'none';
+            scrollToBottomButton.style.display =
+              (scrollTop + clientHeight < scrollHeight - 100) ? 'flex' : 'none';
+          }
+
+          // ✅ 改为监听 content-area 滚动事件
+          contentArea.addEventListener('scroll', scrollFunction);
+
+          // ✅ 延迟初始化（等待 dashboard 图表加载完毕）
+          setTimeout(scrollFunction, 300);
+
+          // ✅ 当内容高度变化（如图表加载）时自动重新计算
+          const observer = new ResizeObserver(scrollFunction);
+          observer.observe(contentArea);
+
+          // ✅ 按钮点击行为
+          backToTopButton.onclick = () => contentArea.scrollTo({ top: 0, behavior: 'smooth' });
+          scrollToBottomButton.onclick = () => contentArea.scrollTo({ top: contentArea.scrollHeight, behavior: 'smooth' });
         });
-        // --- End Of Back to Top Button Logic ---
+        // --- End of Back to Top Button Logic ---
 
         // --- Scroll to Bottom Button Logic ---
         let scrollToBottomButton = document.getElementById("scrollToBottom");
@@ -2389,16 +2330,16 @@
             // Trigger scroll event once to set initial state
             window.dispatchEvent(new Event('scroll'));
         });
-        // --- End Of Scroll to Bottom Button Logic ---
+        // --- End of Scroll to Bottom Button Logic ---
 
         // Store tenancy-compartment and tenancy-fault-domain mapping for dynamic filtering
-        const tenancyCompartments = {"AcmeCorpTenancy": ["ROOT", "KK_Compartment_1"], "BumblebeeTenancy": ["ROOT", "Compt_CBP", "Compt_Dav", "Compt_Kit", "Compt_Muni", "Compt_PCW", "Compt_PCY"], "ClouderaTenancy": ["ROOT"], "DemoTenancy": ["ROOT", "Dashboard_demo", "test_dev"], "StarTenancy": ["ROOT", "DB23aiCompt", "InnoDBCompt", "ProdCompt", "Test1Compt", "Test2Compt"], "temptest": ["ROOT", "oke"]};
-        const tenancyFaultDomains = {"AcmeCorpTenancy": ["FAULT-DOMAIN-1", "FAULT-DOMAIN-2", "FAULT-DOMAIN-3"], "BumblebeeTenancy": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"], "ClouderaTenancy": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"], "DemoTenancy": ["FAULT-DOMAIN-1", "FAULT-DOMAIN-2", "FAULT-DOMAIN-3"], "StarTenancy": ["FAULT-DOMAIN-2", "FAULT-DOMAIN-3", "FAULT-DOMAIN-1"], "temptest": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"]};
+        const tenancyCompartments = {"AcmeCorpTenancy": ["ROOT", "KK_Compartment_1"], "BumblebeeTenancy": ["ROOT", "Compt_CBP", "Compt_Dav", "Compt_Kit", "Compt_Muni", "Compt_PCW", "Compt_PCY"], "ClouderaTenancy": ["ROOT"], "DemoTenancy": ["ROOT", "Dashboard_demo", "test_dev"], "StarTenancy": ["ROOT", "DB23aiCompt", "InnoDBCompt", "ProdCompt", "Test1Compt", "Test2Compt"], "temptest": ["ROOT"]};
+        const tenancyFaultDomains = {"AcmeCorpTenancy": ["FAULT-DOMAIN-1", "FAULT-DOMAIN-2", "FAULT-DOMAIN-3"], "BumblebeeTenancy": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"], "ClouderaTenancy": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"], "DemoTenancy": ["FAULT-DOMAIN-1", "FAULT-DOMAIN-2", "FAULT-DOMAIN-3"], "StarTenancy": ["FAULT-DOMAIN-2", "FAULT-DOMAIN-3", "FAULT-DOMAIN-1"], "temptest": []};
 
         // --- Add variables for OCPU/Memory stats if needed for graphs ---
-        const ocpuMemoryStats = {"total_capacity_ocpus": 1104, "total_capacity_memory_gb": 6528.0, "total_allocated_ocpus": 485, "total_allocated_memory_gb": 4392.0, "total_free_ocpus": 619, "total_free_memory_gb": 2136.0, "fd_capacity_ocpus": 368, "fd_capacity_memory_gb": 2176.0, "fault_domain_allocated_ocpus": {"FAULT-DOMAIN-1": 159, "FAULT-DOMAIN-2": 186, "FAULT-DOMAIN-3": 163}, "fault_domain_allocated_memory": {"FAULT-DOMAIN-1": 1396.0, "FAULT-DOMAIN-2": 1788.0, "FAULT-DOMAIN-3": 1450.0}, "fault_domain_free_ocpus": {"FAULT-DOMAIN-2": 182, "FAULT-DOMAIN-1": 209, "FAULT-DOMAIN-3": 205}, "fault_domain_free_memory": {"FAULT-DOMAIN-2": 388.0, "FAULT-DOMAIN-1": 780.0, "FAULT-DOMAIN-3": 726.0}, "number_of_fault_domains": 3};
-        const attributeCounts = {"states": {"STOPPED": 13, "STARTING": 2, "RUNNING": 97, "TERMINATED": 8}, "tenancies": {"AcmeCorpTenancy": 8, "BumblebeeTenancy": 48, "ClouderaTenancy": 15, "DemoTenancy": 20, "StarTenancy": 23, "temptest": 6}, "compartments": {"[AcmeCorpTenancy] ROOT": 6, "[AcmeCorpTenancy] KK_Compartment_1": 2, "[BumblebeeTenancy] ROOT": 0, "[BumblebeeTenancy] Compt_CBP": 2, "[BumblebeeTenancy] Compt_Dav": 36, "[BumblebeeTenancy] Compt_Kit": 3, "[BumblebeeTenancy] Compt_Muni": 2, "[BumblebeeTenancy] Compt_PCW": 1, "[BumblebeeTenancy] Compt_PCY": 4, "[ClouderaTenancy] ROOT": 15, "[DemoTenancy] ROOT": 0, "[DemoTenancy] Dashboard_demo": 7, "[DemoTenancy] test_dev": 13, "[StarTenancy] ROOT": 0, "[StarTenancy] DB23aiCompt": 5, "[StarTenancy] InnoDBCompt": 6, "[StarTenancy] ProdCompt": 6, "[StarTenancy] Test1Compt": 4, "[StarTenancy] Test2Compt": 2, "[temptest] ROOT": 0, "[temptest] oke": 6}, "fault_domains": {"FAULT-DOMAIN-1": 37, "FAULT-DOMAIN-2": 45, "FAULT-DOMAIN-3": 38}, "tenancy_compartments": {"AcmeCorpTenancy": ["ROOT", "KK_Compartment_1"], "BumblebeeTenancy": ["ROOT", "Compt_CBP", "Compt_Dav", "Compt_Kit", "Compt_Muni", "Compt_PCW", "Compt_PCY"], "ClouderaTenancy": ["ROOT"], "DemoTenancy": ["ROOT", "Dashboard_demo", "test_dev"], "StarTenancy": ["ROOT", "DB23aiCompt", "InnoDBCompt", "ProdCompt", "Test1Compt", "Test2Compt"], "temptest": ["ROOT", "oke"]}, "tenancy_fault_domains": {"AcmeCorpTenancy": ["FAULT-DOMAIN-1", "FAULT-DOMAIN-2", "FAULT-DOMAIN-3"], "BumblebeeTenancy": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"], "ClouderaTenancy": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"], "DemoTenancy": ["FAULT-DOMAIN-1", "FAULT-DOMAIN-2", "FAULT-DOMAIN-3"], "StarTenancy": ["FAULT-DOMAIN-2", "FAULT-DOMAIN-3", "FAULT-DOMAIN-1"], "temptest": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"]}, "ocpu_memory_stats": {"total_capacity_ocpus": 1104, "total_capacity_memory_gb": 6528.0, "total_allocated_ocpus": 485, "total_allocated_memory_gb": 4392.0, "total_free_ocpus": 619, "total_free_memory_gb": 2136.0, "fd_capacity_ocpus": 368, "fd_capacity_memory_gb": 2176.0, "fault_domain_allocated_ocpus": {"FAULT-DOMAIN-1": 159, "FAULT-DOMAIN-2": 186, "FAULT-DOMAIN-3": 163}, "fault_domain_allocated_memory": {"FAULT-DOMAIN-1": 1396.0, "FAULT-DOMAIN-2": 1788.0, "FAULT-DOMAIN-3": 1450.0}, "fault_domain_free_ocpus": {"FAULT-DOMAIN-2": 182, "FAULT-DOMAIN-1": 209, "FAULT-DOMAIN-3": 205}, "fault_domain_free_memory": {"FAULT-DOMAIN-2": 388.0, "FAULT-DOMAIN-1": 780.0, "FAULT-DOMAIN-3": 726.0}, "number_of_fault_domains": 3}, "total_instances": 120};
-        // --- End Of variable declarations ---
+        const ocpuMemoryStats = {"total_capacity_ocpus": 1104, "total_capacity_memory_gb": 6528.0, "total_allocated_ocpus": 480, "total_allocated_memory_gb": 4342.0, "total_free_ocpus": 624, "total_free_memory_gb": 2186.0, "fd_capacity_ocpus": 368, "fd_capacity_memory_gb": 2176.0, "fault_domain_allocated_ocpus": {"FAULT-DOMAIN-1": 158, "FAULT-DOMAIN-2": 177, "FAULT-DOMAIN-3": 151}, "fault_domain_allocated_memory": {"FAULT-DOMAIN-1": 1386.0, "FAULT-DOMAIN-2": 1686.0, "FAULT-DOMAIN-3": 1330.0}, "fault_domain_free_ocpus": {"FAULT-DOMAIN-3": 217, "FAULT-DOMAIN-2": 191, "FAULT-DOMAIN-1": 210}, "fault_domain_free_memory": {"FAULT-DOMAIN-3": 846.0, "FAULT-DOMAIN-2": 490.0, "FAULT-DOMAIN-1": 790.0}, "number_of_fault_domains": 3};
+        const attributeCounts = {"states": {"STOPPED": 13, "STARTING": 2, "RUNNING": 90, "TERMINATED": 3}, "tenancies": {"AcmeCorpTenancy": 8, "BumblebeeTenancy": 48, "ClouderaTenancy": 15, "DemoTenancy": 15, "StarTenancy": 22, "temptest": 0}, "compartments": {"[AcmeCorpTenancy] ROOT": 6, "[AcmeCorpTenancy] KK_Compartment_1": 2, "[BumblebeeTenancy] ROOT": 0, "[BumblebeeTenancy] Compt_CBP": 2, "[BumblebeeTenancy] Compt_Dav": 36, "[BumblebeeTenancy] Compt_Kit": 3, "[BumblebeeTenancy] Compt_Muni": 2, "[BumblebeeTenancy] Compt_PCW": 1, "[BumblebeeTenancy] Compt_PCY": 4, "[ClouderaTenancy] ROOT": 15, "[DemoTenancy] ROOT": 0, "[DemoTenancy] Dashboard_demo": 2, "[DemoTenancy] test_dev": 13, "[StarTenancy] ROOT": 0, "[StarTenancy] DB23aiCompt": 5, "[StarTenancy] InnoDBCompt": 6, "[StarTenancy] ProdCompt": 5, "[StarTenancy] Test1Compt": 4, "[StarTenancy] Test2Compt": 2, "[temptest] ROOT": 0}, "fault_domains": {"FAULT-DOMAIN-1": 35, "FAULT-DOMAIN-2": 38, "FAULT-DOMAIN-3": 35}, "tenancy_compartments": {"AcmeCorpTenancy": ["ROOT", "KK_Compartment_1"], "BumblebeeTenancy": ["ROOT", "Compt_CBP", "Compt_Dav", "Compt_Kit", "Compt_Muni", "Compt_PCW", "Compt_PCY"], "ClouderaTenancy": ["ROOT"], "DemoTenancy": ["ROOT", "Dashboard_demo", "test_dev"], "StarTenancy": ["ROOT", "DB23aiCompt", "InnoDBCompt", "ProdCompt", "Test1Compt", "Test2Compt"], "temptest": ["ROOT"]}, "tenancy_fault_domains": {"AcmeCorpTenancy": ["FAULT-DOMAIN-1", "FAULT-DOMAIN-2", "FAULT-DOMAIN-3"], "BumblebeeTenancy": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"], "ClouderaTenancy": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"], "DemoTenancy": ["FAULT-DOMAIN-1", "FAULT-DOMAIN-2", "FAULT-DOMAIN-3"], "StarTenancy": ["FAULT-DOMAIN-2", "FAULT-DOMAIN-3", "FAULT-DOMAIN-1"], "temptest": []}, "ocpu_memory_stats": {"total_capacity_ocpus": 1104, "total_capacity_memory_gb": 6528.0, "total_allocated_ocpus": 480, "total_allocated_memory_gb": 4342.0, "total_free_ocpus": 624, "total_free_memory_gb": 2186.0, "fd_capacity_ocpus": 368, "fd_capacity_memory_gb": 2176.0, "fault_domain_allocated_ocpus": {"FAULT-DOMAIN-1": 158, "FAULT-DOMAIN-2": 177, "FAULT-DOMAIN-3": 151}, "fault_domain_allocated_memory": {"FAULT-DOMAIN-1": 1386.0, "FAULT-DOMAIN-2": 1686.0, "FAULT-DOMAIN-3": 1330.0}, "fault_domain_free_ocpus": {"FAULT-DOMAIN-3": 217, "FAULT-DOMAIN-2": 191, "FAULT-DOMAIN-1": 210}, "fault_domain_free_memory": {"FAULT-DOMAIN-3": 846.0, "FAULT-DOMAIN-2": 490.0, "FAULT-DOMAIN-1": 790.0}, "number_of_fault_domains": 3}, "total_instances": 108};
+        // --- End of variable declarations ---
 
         // --- ADD/REPLACE these lines to use the SANITIZED data ---
         // Data prepared in Python for the graphs
@@ -2409,14 +2350,14 @@
         const tenancyDataForGraph = tenancyLabelsForGraph.map(label => (attributeCounts.tenancies || {})[label] || 0);
         const resourceUtilData = {
             totalCapacityOcpus: 1104,
-            totalAllocatedOcpus: 485,
-            totalFreeOcpus: 619,
+            totalAllocatedOcpus: 480,
+            totalFreeOcpus: 624,
             totalCapacityMemoryGb: 6528.0,
-            totalAllocatedMemoryGb: 4392.0,
-            totalFreeMemoryGb: 2136.0
+            totalAllocatedMemoryGb: 4342.0,
+            totalFreeMemoryGb: 2186.0
         };
-        const instanceDistributionData = {"name": "Resources", "children": [{"name": "AcmeCorpTenancy", "allocated_ocpus": 23.0, "allocated_ocpus_percentage": 2.1, "allocated_memory": 214.0, "allocated_memory_percentage": 3.3, "children": [{"name": "Allocated OCPUs", "value": 23.0, "percentage": 2.1, "tenancy": "AcmeCorpTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 214.0, "percentage": 3.3, "tenancy": "AcmeCorpTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "BumblebeeTenancy", "allocated_ocpus": 101.0, "allocated_ocpus_percentage": 9.1, "allocated_memory": 1066.0, "allocated_memory_percentage": 16.3, "children": [{"name": "Allocated OCPUs", "value": 101.0, "percentage": 9.1, "tenancy": "BumblebeeTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 1066.0, "percentage": 16.3, "tenancy": "BumblebeeTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "ClouderaTenancy", "allocated_ocpus": 248.0, "allocated_ocpus_percentage": 22.5, "allocated_memory": 1912.0, "allocated_memory_percentage": 29.3, "children": [{"name": "Allocated OCPUs", "value": 248.0, "percentage": 22.5, "tenancy": "ClouderaTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 1912.0, "percentage": 29.3, "tenancy": "ClouderaTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "DemoTenancy", "allocated_ocpus": 35.0, "allocated_ocpus_percentage": 3.2, "allocated_memory": 372.0, "allocated_memory_percentage": 5.7, "children": [{"name": "Allocated OCPUs", "value": 35.0, "percentage": 3.2, "tenancy": "DemoTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 372.0, "percentage": 5.7, "tenancy": "DemoTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "StarTenancy", "allocated_ocpus": 72.0, "allocated_ocpus_percentage": 6.5, "allocated_memory": 768.0, "allocated_memory_percentage": 11.8, "children": [{"name": "Allocated OCPUs", "value": 72.0, "percentage": 6.5, "tenancy": "StarTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 768.0, "percentage": 11.8, "tenancy": "StarTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "temptest", "allocated_ocpus": 6.0, "allocated_ocpus_percentage": 0.5, "allocated_memory": 60.0, "allocated_memory_percentage": 0.9, "children": [{"name": "Allocated OCPUs", "value": 6.0, "percentage": 0.5, "tenancy": "temptest", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 60.0, "percentage": 0.9, "tenancy": "temptest", "itemStyle": {"color": "#fac858"}}]}]};
-        // --- End Of adding sanitized data ---
+        const instanceDistributionData = {"name": "Resources", "children": [{"name": "AcmeCorpTenancy", "allocated_ocpus": 23.0, "allocated_ocpus_percentage": 2.1, "allocated_memory": 214.0, "allocated_memory_percentage": 3.3, "children": [{"name": "Allocated OCPUs", "value": 23.0, "percentage": 2.1, "tenancy": "AcmeCorpTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 214.0, "percentage": 3.3, "tenancy": "AcmeCorpTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "BumblebeeTenancy", "allocated_ocpus": 98.0, "allocated_ocpus_percentage": 8.9, "allocated_memory": 1036.0, "allocated_memory_percentage": 15.9, "children": [{"name": "Allocated OCPUs", "value": 98.0, "percentage": 8.9, "tenancy": "BumblebeeTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 1036.0, "percentage": 15.9, "tenancy": "BumblebeeTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "ClouderaTenancy", "allocated_ocpus": 248.0, "allocated_ocpus_percentage": 22.5, "allocated_memory": 1912.0, "allocated_memory_percentage": 29.3, "children": [{"name": "Allocated OCPUs", "value": 248.0, "percentage": 22.5, "tenancy": "ClouderaTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 1912.0, "percentage": 29.3, "tenancy": "ClouderaTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "DemoTenancy", "allocated_ocpus": 35.0, "allocated_ocpus_percentage": 3.2, "allocated_memory": 372.0, "allocated_memory_percentage": 5.7, "children": [{"name": "Allocated OCPUs", "value": 35.0, "percentage": 3.2, "tenancy": "DemoTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 372.0, "percentage": 5.7, "tenancy": "DemoTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "StarTenancy", "allocated_ocpus": 76.0, "allocated_ocpus_percentage": 6.9, "allocated_memory": 808.0, "allocated_memory_percentage": 12.4, "children": [{"name": "Allocated OCPUs", "value": 76.0, "percentage": 6.9, "tenancy": "StarTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 808.0, "percentage": 12.4, "tenancy": "StarTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "temptest", "allocated_ocpus": 0, "allocated_ocpus_percentage": 0.0, "allocated_memory": 0.0, "allocated_memory_percentage": 0.0, "children": [{"name": "Allocated OCPUs", "value": 0, "percentage": 0.0, "tenancy": "temptest", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 0.0, "percentage": 0.0, "tenancy": "temptest", "itemStyle": {"color": "#fac858"}}]}]};
+        // --- End of adding sanitized data ---
 
         // --- Define Color Scheme ---
         const colorScheme = {
@@ -2447,7 +2388,7 @@
             ocpusColor: 'hsl(220, 70%, 60%)',
             memoryColor: 'hsl(0, 70%, 65%)'
         };
-        // --- End Of Define Color Scheme ---
+        // --- End of Define Color Scheme ---
 
         // --- Track if graphs have been initialized to prevent re-creation ---
         let dashboardGraphsInitialized = false;
@@ -2462,34 +2403,38 @@
         };
 
         // --- Tab Switching Logic ---
-        document.querySelectorAll('.tab-button').forEach(button => {
-            button.addEventListener('click', () => {
-                // Update active tab button
-                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
+        document.querySelectorAll('.tab-button').forEach(btn => {
+          btn.addEventListener('click', () => {
+            // 更新 tab 按钮激活状态
+            document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
 
-                // Show corresponding content
-                const tabId = button.dataset.tab; // Use dataset.tab to get the target tab ID
-                document.querySelectorAll('.tab-content').forEach(content => {
-                    content.classList.remove('active');
-                });
+            // 切换显示 tab 内容
+            const targetTab = btn.dataset.tab;
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            const targetContent = document.getElementById(targetTab);
+            if (targetContent) {
+              targetContent.classList.add('active');
 
-                const targetContent = document.getElementById(tabId);
-                if (targetContent) {
-                    targetContent.classList.add('active');
+              // ✅ Dashboard 初始化（保持原逻辑）
+              if (targetTab === 'dashboard' && !dashboardGraphsInitialized) {
+                console.log("[JS] Initializing Dashboard graphs...");
+                initializeDashboardGraphs();
+                dashboardGraphsInitialized = true;
+              }
+            } else {
+              console.warn(`[JS] Tab content with ID '${targetTab}' not found.`);
+            }
 
-                    // --- Initialize graphs if switching to the new 'dashboard' tab for the first time ---
-                    if (tabId === 'dashboard' && !dashboardGraphsInitialized) {
-                        console.log("[JS] Initializing Dashboard graphs...");
-                        initializeDashboardGraphs();
-                        dashboardGraphsInitialized = true;
-                    }
-                } else {
-                    console.warn(`[JS] Tab content with ID '${tabId}' not found.`);
-                }
-            });
+            // ✅ 切换 tab 时滚动回顶部
+            const contentArea = document.querySelector('.content-area');
+            if (contentArea) contentArea.scrollTo({ top: 0 });
+
+            // ✅ 重新绑定滚动按钮监听
+            setupScrollButtons();
+          });
         });
-        // --- End Of Tab Switching ---
+        // --- End of Tab Switching ---
 
         // --- Function to Initialize and Render Graphs on the Dashboard Tab using ECharts ---
         function initializeDashboardGraphs() {
@@ -2505,18 +2450,18 @@
                     console.error("[JS] [ECharts] Failed to get chart containers (div elements).");
                     return;
                 }
-                // --- End Of 1. Get Chart Containers ---
+                // --- End of 1. Get Chart Containers ---
 
                 // --- 2. Initialize ECharts Instances ---
                 const resourceChart = echarts.init(resourceChartContainer);
                 const instanceChart = echarts.init(instanceChartContainer);
-                // --- End Of 2. Initialize ECharts Instances ---
+                // --- End of 2. Initialize ECharts Instances ---
 
                 // --- 3. Prepare Data (Assuming data is available from Python script) ---
                 // Use the pre-prepared labels and data arrays from Python
                 // These should be available as global JS variables injected by the Python script
                 const barLabels = ["AcmeCorpTenancy", "BumblebeeTenancy", "ClouderaTenancy", "DemoTenancy", "StarTenancy", "temptest"]; // Array of strings
-                const barData = [8, 48, 15, 20, 23, 6]; // Array of numbers
+                const barData = [8, 48, 15, 15, 22, 0]; // Array of numbers
 
                 // Prepare data for Resource Utilization Doughnut Chart
                 const totalCapacityOcpus = ocpuMemoryStats.total_capacity_ocpus || 0;
@@ -2532,7 +2477,7 @@
                     { value: totalAllocatedMemoryGb, name: 'Allocated Memory (GB)' },
                     { value: totalFreeMemoryGb, name: 'Free Memory (GB)' }
                 ];
-                // --- End Of 3. Prepare Data (Assuming data is available from Python script) ---
+                // --- End of 3. Prepare Data (Assuming data is available from Python script) ---
 
                 // --- 4. Configure Resource Utilization Doughnut Chart (using ECharts) ---
                 const resourceOption = {
@@ -2665,7 +2610,7 @@
                             }]
                     }]
                 };
-                // --- End Of 4. Configure Resource Utilization Doughnut Chart (using ECharts) ---
+                // --- End of 4. Configure Resource Utilization Doughnut Chart (using ECharts) ---
 
                 // --- 5. Configure Instance Distribution Bar Chart (using ECharts) ---
                 // 预处理数据，添加颜色信息
@@ -2803,10 +2748,10 @@
                                     rotate: 'tangential',
                                 }
                             }
-			]
+                        ]
                     }]
                 };
-                // --- End Of 5. Configure Instance Distribution Bar Chart (using ECharts) ---
+                // --- End of 5. Configure Instance Distribution Bar Chart (using ECharts) ---
 
                 // --- 6. Set theme adaptation ---
                 const setChartBackground = () => {
@@ -2866,7 +2811,7 @@
                         }
                     }, 250);
                 });
-                // --- End Of 6. Set theme adaptation ---
+                // --- End of 6. Set theme adaptation ---
 
                 // --- 7. Render Charts using ECharts ---
                 resourceChart.setOption(resourceOption);
@@ -2875,7 +2820,7 @@
                 console.log("[JS] [ECharts] Resource Utilization Doughnut chart rendered.");
                 console.log("[JS] [ECharts] Instance Distribution Bar chart rendered.");
                 console.log("[JS] [ECharts] Dashboard graphs initialized successfully.");
-                // --- End Of 7. Render Charts using ECharts ---
+                // --- End of 7. Render Charts using ECharts ---
 
                 // --- 8. Optional: Handle Window Resize ---
                 window.addEventListener('resize', function() {
@@ -2886,13 +2831,13 @@
                         instanceChart.resize();
                     }
                 });
-                // --- End Of 8. Optional: Handle Window Resize ---
+                // --- End of 8. Optional: Handle Window Resize ---
 
             } catch (error) {
                 console.error("[JS] [ECharts] Error initializing dashboard graphs:", error);
             }
         }
-        // --- End Of ECharts Graph Initialization ---
+        // --- End of ECharts Graph Initialization ---
 
         // --- Theme Toggle ---
         const themeToggle = document.getElementById('themeToggle');
@@ -2936,7 +2881,7 @@
                 const rows = table.querySelectorAll('tbody tr');
                 if (searchTerm === '') {
                     rows.forEach(row => row.classList.remove('hidden'));
-                    updateVisibleCount(120); // Reset visible count
+                    updateVisibleCount(108); // Reset visible count
                     return;
                 }
                 let visibleCount = 0;
@@ -2957,7 +2902,7 @@
                 clearButton.classList.remove('show');
                 const rows = table.querySelectorAll('tbody tr');
                 rows.forEach(row => row.classList.remove('hidden'));
-                updateVisibleCount(120); // Reset visible count
+                updateVisibleCount(108); // Reset visible count
             });
         }
 
@@ -3017,7 +2962,7 @@
                 dashboardGraphsInitialized = true;
             }
         });
-        // --- End Of Setup searches and other initializations after DOM is loaded ---
+        // --- End of Setup searches and other initializations after DOM is loaded ---
 
         // --- Filtering Functions for Instances Tab ---
         document.addEventListener("DOMContentLoaded", function() {
@@ -3158,7 +3103,7 @@
             document.getElementById('clear-instances').classList.remove('show');
 
             applyAllTab2Filters();
-            updateVisibleCount(120); // Reset visible count
+            updateVisibleCount(108); // Reset visible count
         }
 
         function applyAllTab2Filters() {
@@ -3196,6 +3141,32 @@
             if (visibleCountElement) {
                 visibleCountElement.textContent = count;
             }
+        }
+
+        function setupScrollButtons() {
+          const contentArea = document.querySelector('.content-area');
+          const backToTopBtn = document.getElementById('backToTop');
+          const scrollToBottomBtn = document.getElementById('scrollToBottom');
+          if (!contentArea) return;
+
+          function handleScroll() {
+            const { scrollTop, scrollHeight, clientHeight } = contentArea;
+            backToTopBtn.style.display = scrollTop > 100 ? 'flex' : 'none';
+            scrollToBottomBtn.style.display =
+              (scrollTop + clientHeight < scrollHeight - 100) ? 'flex' : 'none';
+          }
+
+          contentArea.removeEventListener('scroll', handleScroll);
+          contentArea.addEventListener('scroll', handleScroll);
+
+          // ✅ 初始化状态
+          handleScroll();
+
+          backToTopBtn.onclick = () =>
+            contentArea.scrollTo({ top: 0, behavior: 'smooth' });
+
+          scrollToBottomBtn.onclick = () =>
+            contentArea.scrollTo({ top: contentArea.scrollHeight, behavior: 'smooth' });
         }
     </script>
 </body>
