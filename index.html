@@ -904,13 +904,13 @@
                     <div class="dashboard-header">
                         <div class="report-info">
                             <i class="fas fa-clock"></i>
-                            Report auto-generated at 2025-11-14 11:10:02 (GMT+8)
+                            Report auto-generated at 2025-11-14 11:30:01 (GMT+8)
                         </div>
                     </div>
 
                     <div class="total-counter">
                         <i class="fas fa-cube"></i>
-                        Total Instances: <span id="dashboard-total-count">107</span>
+                        Total Instances: <span id="dashboard-total-count">0</span>
                     </div>
 
                     <!-- Graphs Section -->
@@ -934,13 +934,13 @@
                     <div class="analytics-header">
                         <div class="report-info">
                             <i class="fas fa-clock"></i>
-                            Report auto-generated at 2025-11-14 11:10:02 (GMT+8)
+                            Report auto-generated at 2025-11-14 11:30:01 (GMT+8)
                         </div>
                     </div>
 
                     <div class="total-counter">
                         <i class="fas fa-cube"></i>
-                        Total Instances: <span id="analytics-total-count">107</span>
+                        Total Instances: <span id="analytics-total-count">0</span>
                     </div>
 
                     <div class="instance-counters">
@@ -948,80 +948,9 @@
                     <!-- Fault Domain Resource Table (Full Width on Top) -->
                     <div style="grid-column: 1 / -1; margin-bottom: 30px;">
                         <div class="card">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px;">
-                                <h3 class="section-title" style="margin: 0;"><i class="fas fa-bolt"></i> Fault Domain Resources</h3>
-                                <p style="font-size: 0.9em; color: var(--text-secondary); margin: 0; text-align: right;">(Assumed Capacity per FD: 368 OCPUs, 2176.00 GB)</p>
-                                <div class="export-buttons">
-                                    <button class="export-btn export-excel" onclick="exportFaultDomainToExcel()">
-                                        <i class="fas fa-file-excel"></i>
-                                        Export to Excel
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="table-container">
-                            <table id="faultDomainTable" class="responsive-table">
-                                <thead>
-                                    <tr>
-                                        <th style="font-size: 1.0em;">Fault Domain</th>
-                                        <th style="font-size: 1.0em;">Total OCPUs</th>
-                                        <th style="font-size: 1.0em;">Allocated OCPUs</th>
-                                        <th style="font-size: 1.0em;">Free OCPUs</th>
-                                        <th style="font-size: 1.0em;">Free OCPUs %</th>
-                                        <th style="font-size: 1.0em;">Total Memory (GB)</th>
-                                        <th style="font-size: 1.0em;">Allocated Memory (GB)</th>
-                                        <th style="font-size: 1.0em;">Free Memory (GB)</th>
-                                        <th style="font-size: 1.0em;">Free Memory %</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td style="font-weight: bold;">FAULT-DOMAIN-1</td>
-                                        <td style="text-align: right;">368</td>
-                                        <td style="text-align: right;">156</td>
-                                        <td style="text-align: right;">212</td>
-                                        <td style="text-align: right;">57.6%</td>
-                                        <td style="text-align: right;">2176.00</td>
-                                        <td style="text-align: right;">1366.00</td>
-                                        <td style="text-align: right;">810.00</td>
-                                        <td style="text-align: right;">37.2%</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-weight: bold;">FAULT-DOMAIN-2</td>
-                                        <td style="text-align: right;">368</td>
-                                        <td style="text-align: right;">181</td>
-                                        <td style="text-align: right;">187</td>
-                                        <td style="text-align: right;">50.8%</td>
-                                        <td style="text-align: right;">2176.00</td>
-                                        <td style="text-align: right;">1726.00</td>
-                                        <td style="text-align: right;">450.00</td>
-                                        <td style="text-align: right;">20.7%</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-weight: bold;">FAULT-DOMAIN-3</td>
-                                        <td style="text-align: right;">368</td>
-                                        <td style="text-align: right;">149</td>
-                                        <td style="text-align: right;">219</td>
-                                        <td style="text-align: right;">59.5%</td>
-                                        <td style="text-align: right;">2176.00</td>
-                                        <td style="text-align: right;">1310.00</td>
-                                        <td style="text-align: right;">866.00</td>
-                                        <td style="text-align: right;">39.8%</td>
-                                    </tr>
-                                    <tr style="background-color: var(--header-bg); font-weight: bold;">
-                                        <td style="text-align: left;">OVERALL TOTALS (3 FDs)</td>
-                                        <td style="text-align: right;">1104</td>
-                                        <td style="text-align: right;">486</td>
-                                        <td style="text-align: right;">618</td>
-                                        <td style="text-align: right;">56.0%</td>
-                                        <td style="text-align: right;">6528.00</td>
-                                        <td style="text-align: right;">4402.00</td>
-                                        <td style="text-align: right;">2126.00</td>
-                                        <td style="text-align: right;">32.6%</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            </div>
-                        </div>
+                    <h3 class="section-title"><i class="fas fa-bolt"></i> Fault Domain Resources</h3>
+                    <div class="counter-item">No instance data found or FD capacity not configured.</div>
+                  </div>
                     </div>
 
                     <!-- Tenancy Resource Summary Table -->
@@ -1029,7 +958,7 @@
                         <div class="card">
                             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px;">
                                 <h3 class="section-title" style="margin: 0;"><i class="fas fa-building"></i> Tenancies Resource Summary</h3>
-                                <p style="font-size: 0.9em; color: var(--text-secondary); margin: 0; text-align: right;">(Based on total capacity: 1104 OCPUs, 6528.00 GB)</p>
+                                <p style="font-size: 0.9em; color: var(--text-secondary); margin: 0; text-align: right;">(Based on total capacity: 0 OCPUs, 0.00 GB)</p>
                                 <div class="export-buttons">
                                     <button class="export-btn export-excel" onclick="exportTenancyToExcel()">
                                         <i class="fas fa-file-excel"></i>
@@ -1052,43 +981,43 @@
                                 <tbody>
                                     <tr>
                                         <td style="font-weight: bold;">AcmeCorpTenancy</td>
-                                        <td style="text-align: right;">8</td>
-                                        <td style="text-align: right;">23.0</td>
-                                        <td style="text-align: right;">2.1%</td>
-                                        <td style="text-align: right;">214.00</td>
-                                        <td style="text-align: right;">3.3%</td>
+                                        <td style="text-align: right;">0</td>
+                                        <td style="text-align: right;">0</td>
+                                        <td style="text-align: right;">0.0%</td>
+                                        <td style="text-align: right;">0.00</td>
+                                        <td style="text-align: right;">0.0%</td>
                                     </tr>
                                     <tr>
                                         <td style="font-weight: bold;">BumblebeeTenancy</td>
-                                        <td style="text-align: right;">46</td>
-                                        <td style="text-align: right;">100.0</td>
-                                        <td style="text-align: right;">9.1%</td>
-                                        <td style="text-align: right;">1056.00</td>
-                                        <td style="text-align: right;">16.2%</td>
+                                        <td style="text-align: right;">0</td>
+                                        <td style="text-align: right;">0</td>
+                                        <td style="text-align: right;">0.0%</td>
+                                        <td style="text-align: right;">0.00</td>
+                                        <td style="text-align: right;">0.0%</td>
                                     </tr>
                                     <tr>
                                         <td style="font-weight: bold;">ClouderaTenancy</td>
-                                        <td style="text-align: right;">15</td>
-                                        <td style="text-align: right;">248.0</td>
-                                        <td style="text-align: right;">22.5%</td>
-                                        <td style="text-align: right;">1912.00</td>
-                                        <td style="text-align: right;">29.3%</td>
+                                        <td style="text-align: right;">0</td>
+                                        <td style="text-align: right;">0</td>
+                                        <td style="text-align: right;">0.0%</td>
+                                        <td style="text-align: right;">0.00</td>
+                                        <td style="text-align: right;">0.0%</td>
                                     </tr>
                                     <tr>
                                         <td style="font-weight: bold;">DemoTenancy</td>
-                                        <td style="text-align: right;">16</td>
-                                        <td style="text-align: right;">39.0</td>
-                                        <td style="text-align: right;">3.5%</td>
-                                        <td style="text-align: right;">412.00</td>
-                                        <td style="text-align: right;">6.3%</td>
+                                        <td style="text-align: right;">0</td>
+                                        <td style="text-align: right;">0</td>
+                                        <td style="text-align: right;">0.0%</td>
+                                        <td style="text-align: right;">0.00</td>
+                                        <td style="text-align: right;">0.0%</td>
                                     </tr>
                                     <tr>
                                         <td style="font-weight: bold;">StarTenancy</td>
-                                        <td style="text-align: right;">22</td>
-                                        <td style="text-align: right;">76.0</td>
-                                        <td style="text-align: right;">6.9%</td>
-                                        <td style="text-align: right;">808.00</td>
-                                        <td style="text-align: right;">12.4%</td>
+                                        <td style="text-align: right;">0</td>
+                                        <td style="text-align: right;">0</td>
+                                        <td style="text-align: right;">0.0%</td>
+                                        <td style="text-align: right;">0.00</td>
+                                        <td style="text-align: right;">0.0%</td>
                                     </tr>
                                     <tr>
                                         <td style="font-weight: bold;">temptest</td>
@@ -1100,11 +1029,11 @@
                                     </tr>
                                     <tr style="background-color: var(--header-bg); font-weight: bold;">
                                         <td>OVERALL TOTALS</td>
-                                        <td style="text-align: right;">107</td>
-                                        <td style="text-align: right;">486.0</td>
-                                        <td style="text-align: right;">44.0%</td>
-                                        <td style="text-align: right;">4402.00</td>
-                                        <td style="text-align: right;">67.4%</td>
+                                        <td style="text-align: right;">0</td>
+                                        <td style="text-align: right;">0</td>
+                                        <td style="text-align: right;">0.0%</td>
+                                        <td style="text-align: right;">0.00</td>
+                                        <td style="text-align: right;">0.0%</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1116,10 +1045,10 @@
                     <div class="instance-counters">
                         
                         <div class="dashboard-flex-container">
-                            <div class="card"><h3 class="section-title"><i class="fas fa-bolt"></i> Fault Domains</h3><div class="counter-item">FAULT-DOMAIN-1: <span id="fault-fault_domain_1-count">34</span></div><div class="counter-item">FAULT-DOMAIN-2: <span id="fault-fault_domain_2-count">39</span></div><div class="counter-item">FAULT-DOMAIN-3: <span id="fault-fault_domain_3-count">34</span></div></div>
-                            <div class="card"><h3 class="section-title"><i class="fas fa-building"></i> Tenancies</h3><div class="counter-item">AcmeCorpTenancy: <span id="tenancy-acmecorptenancy-count">8</span></div><div class="counter-item">BumblebeeTenancy: <span id="tenancy-bumblebeetenancy-count">46</span></div><div class="counter-item">ClouderaTenancy: <span id="tenancy-clouderatenancy-count">15</span></div><div class="counter-item">DemoTenancy: <span id="tenancy-demotenancy-count">16</span></div><div class="counter-item">StarTenancy: <span id="tenancy-startenancy-count">22</span></div><div class="counter-item">temptest: <span id="tenancy-temptest-count">0</span></div></div>
-                            <div class="card"><h3 class="section-title"><i class="fas fa-chart-column"></i> Instance States</h3><div class="counter-item">RUNNING: <span id="state-running-count">89</span></div><div class="counter-item">STARTING: <span id="state-starting-count">2</span></div><div class="counter-item">STOPPED: <span id="state-stopped-count">16</span></div></div>
-                            <div class="card"><h3 class="section-title"><i class="fas fa-folder"></i> Compartments</h3><div class="counter-item">[AcmeCorpTenancy] KK_Compartment_1: <span id="compartment-_acmecorptenancy__kk_compartment_1-count">2</span></div><div class="counter-item">[AcmeCorpTenancy] ROOT: <span id="compartment-_acmecorptenancy__root-count">6</span></div><div class="counter-item">[BumblebeeTenancy] Compt_CBP: <span id="compartment-_bumblebeetenancy__compt_cbp-count">2</span></div><div class="counter-item">[BumblebeeTenancy] Compt_Dav: <span id="compartment-_bumblebeetenancy__compt_dav-count">34</span></div><div class="counter-item">[BumblebeeTenancy] Compt_Kit: <span id="compartment-_bumblebeetenancy__compt_kit-count">3</span></div><div class="counter-item">[BumblebeeTenancy] Compt_Muni: <span id="compartment-_bumblebeetenancy__compt_muni-count">2</span></div><div class="counter-item">[BumblebeeTenancy] Compt_PCW: <span id="compartment-_bumblebeetenancy__compt_pcw-count">1</span></div><div class="counter-item">[BumblebeeTenancy] Compt_PCY: <span id="compartment-_bumblebeetenancy__compt_pcy-count">4</span></div><div class="counter-item">[BumblebeeTenancy] ROOT: <span id="compartment-_bumblebeetenancy__root-count">0</span></div><div class="counter-item">[ClouderaTenancy] ROOT: <span id="compartment-_clouderatenancy__root-count">15</span></div><div class="counter-item">[DemoTenancy] Dashboard_demo: <span id="compartment-_demotenancy__dashboard_demo-count">3</span></div><div class="counter-item">[DemoTenancy] ROOT: <span id="compartment-_demotenancy__root-count">0</span></div><div class="counter-item">[DemoTenancy] test_dev: <span id="compartment-_demotenancy__test_dev-count">13</span></div><div class="counter-item">[StarTenancy] DB23aiCompt: <span id="compartment-_startenancy__db23aicompt-count">5</span></div><div class="counter-item">[StarTenancy] InnoDBCompt: <span id="compartment-_startenancy__innodbcompt-count">6</span></div><div class="counter-item">[StarTenancy] ProdCompt: <span id="compartment-_startenancy__prodcompt-count">5</span></div><div class="counter-item">[StarTenancy] ROOT: <span id="compartment-_startenancy__root-count">0</span></div><div class="counter-item">[StarTenancy] Test1Compt: <span id="compartment-_startenancy__test1compt-count">4</span></div><div class="counter-item">[StarTenancy] Test2Compt: <span id="compartment-_startenancy__test2compt-count">2</span></div><div class="counter-item">[temptest] ROOT: <span id="compartment-_temptest__root-count">0</span></div></div>
+                            <div class="card"><h3 class="section-title"><i class="fas fa-bolt"></i> Fault Domains</h3><div class="counter-item">No data available</div></div>
+                            <div class="card"><h3 class="section-title"><i class="fas fa-building"></i> Tenancies</h3><div class="counter-item">AcmeCorpTenancy: <span id="tenancy-acmecorptenancy-count">0</span></div><div class="counter-item">BumblebeeTenancy: <span id="tenancy-bumblebeetenancy-count">0</span></div><div class="counter-item">ClouderaTenancy: <span id="tenancy-clouderatenancy-count">0</span></div><div class="counter-item">DemoTenancy: <span id="tenancy-demotenancy-count">0</span></div><div class="counter-item">StarTenancy: <span id="tenancy-startenancy-count">0</span></div><div class="counter-item">temptest: <span id="tenancy-temptest-count">0</span></div></div>
+                            <div class="card"><h3 class="section-title"><i class="fas fa-chart-column"></i> Instance States</h3><div class="counter-item">No data available</div></div>
+                            <div class="card"><h3 class="section-title"><i class="fas fa-folder"></i> Compartments</h3><div class="counter-item">[AcmeCorpTenancy] ROOT: <span id="compartment-_acmecorptenancy__root-count">0</span></div><div class="counter-item">[BumblebeeTenancy] ROOT: <span id="compartment-_bumblebeetenancy__root-count">0</span></div><div class="counter-item">[ClouderaTenancy] ROOT: <span id="compartment-_clouderatenancy__root-count">0</span></div><div class="counter-item">[DemoTenancy] ROOT: <span id="compartment-_demotenancy__root-count">0</span></div><div class="counter-item">[StarTenancy] ROOT: <span id="compartment-_startenancy__root-count">0</span></div><div class="counter-item">[temptest] ROOT: <span id="compartment-_temptest__root-count">0</span></div></div>
                         </div>
 
                     </div>
@@ -1131,14 +1060,14 @@
                     <div class="instances-header">
                         <div class="report-info">
                             <i class="fas fa-clock"></i>
-                            Report auto-generated at 2025-11-14 11:10:02 (GMT+8)
+                            Report auto-generated at 2025-11-14 11:30:01 (GMT+8)
                         </div>
                     </div>
 
                     <div class="total-counter">
                         <i class="fas fa-cube"></i>
-                        Total Instances: <span id="tab2-total-count">107</span> |
-                            Visible: <span id="tab2-visible-count" style="color: var(--primary); font-weight: bold;">107</span>
+                        Total Instances: <span id="tab2-total-count">0</span> |
+                            Visible: <span id="tab2-visible-count" style="color: var(--primary); font-weight: bold;">0</span>
                     </div>
 
                     <!-- Filter Section -->
@@ -1161,39 +1090,25 @@
                             
                             <select id="tab2-tenancy-filter" class="filter-dropdown" onchange="applyTab2Filters()">
                                 <option value="ALL">All Tenancies</option>
-                                <option value="AcmeCorpTenancy">AcmeCorpTenancy (8)</option><option value="BumblebeeTenancy">BumblebeeTenancy (46)</option><option value="ClouderaTenancy">ClouderaTenancy (15)</option><option value="DemoTenancy">DemoTenancy (16)</option><option value="StarTenancy">StarTenancy (22)</option>
+                                
                             </select>
     
                             <select id="tab2-compartment-filter" class="filter-dropdown" onchange="applyTab2Filters()">
                                 <option value="ALL">All Compartments</option>
                                 <optgroup label="AcmeCorpTenancy">
-                                    <option value="KK_Compartment_1" data-tenancy="AcmeCorpTenancy">KK_Compartment_1</option>
                                     <option value="ROOT" data-tenancy="AcmeCorpTenancy">ROOT</option>
                                 </optgroup>
                                 <optgroup label="BumblebeeTenancy">
-                                    <option value="Compt_CBP" data-tenancy="BumblebeeTenancy">Compt_CBP</option>
-                                    <option value="Compt_Dav" data-tenancy="BumblebeeTenancy">Compt_Dav</option>
-                                    <option value="Compt_Kit" data-tenancy="BumblebeeTenancy">Compt_Kit</option>
-                                    <option value="Compt_Muni" data-tenancy="BumblebeeTenancy">Compt_Muni</option>
-                                    <option value="Compt_PCW" data-tenancy="BumblebeeTenancy">Compt_PCW</option>
-                                    <option value="Compt_PCY" data-tenancy="BumblebeeTenancy">Compt_PCY</option>
                                     <option value="ROOT" data-tenancy="BumblebeeTenancy">ROOT</option>
                                 </optgroup>
                                 <optgroup label="ClouderaTenancy">
                                     <option value="ROOT" data-tenancy="ClouderaTenancy">ROOT</option>
                                 </optgroup>
                                 <optgroup label="DemoTenancy">
-                                    <option value="Dashboard_demo" data-tenancy="DemoTenancy">Dashboard_demo</option>
                                     <option value="ROOT" data-tenancy="DemoTenancy">ROOT</option>
-                                    <option value="test_dev" data-tenancy="DemoTenancy">test_dev</option>
                                 </optgroup>
                                 <optgroup label="StarTenancy">
-                                    <option value="DB23aiCompt" data-tenancy="StarTenancy">DB23aiCompt</option>
-                                    <option value="InnoDBCompt" data-tenancy="StarTenancy">InnoDBCompt</option>
-                                    <option value="ProdCompt" data-tenancy="StarTenancy">ProdCompt</option>
                                     <option value="ROOT" data-tenancy="StarTenancy">ROOT</option>
-                                    <option value="Test1Compt" data-tenancy="StarTenancy">Test1Compt</option>
-                                    <option value="Test2Compt" data-tenancy="StarTenancy">Test2Compt</option>
                                 </optgroup>
                                 <optgroup label="temptest">
                                     <option value="ROOT" data-tenancy="temptest">ROOT</option>
@@ -1201,31 +1116,6 @@
                             </select>
                             <select id="tab2-fault-domain-filter" class="filter-dropdown" onchange="applyTab2Filters()">
                                 <option value="ALL">All Fault Domains</option>
-                                <optgroup label="AcmeCorpTenancy">
-                                    <option value="FAULT-DOMAIN-1" data-tenancy="AcmeCorpTenancy">FAULT-DOMAIN-1</option>
-                                    <option value="FAULT-DOMAIN-2" data-tenancy="AcmeCorpTenancy">FAULT-DOMAIN-2</option>
-                                    <option value="FAULT-DOMAIN-3" data-tenancy="AcmeCorpTenancy">FAULT-DOMAIN-3</option>
-                                </optgroup>
-                                <optgroup label="BumblebeeTenancy">
-                                    <option value="FAULT-DOMAIN-1" data-tenancy="BumblebeeTenancy">FAULT-DOMAIN-1</option>
-                                    <option value="FAULT-DOMAIN-2" data-tenancy="BumblebeeTenancy">FAULT-DOMAIN-2</option>
-                                    <option value="FAULT-DOMAIN-3" data-tenancy="BumblebeeTenancy">FAULT-DOMAIN-3</option>
-                                </optgroup>
-                                <optgroup label="ClouderaTenancy">
-                                    <option value="FAULT-DOMAIN-1" data-tenancy="ClouderaTenancy">FAULT-DOMAIN-1</option>
-                                    <option value="FAULT-DOMAIN-2" data-tenancy="ClouderaTenancy">FAULT-DOMAIN-2</option>
-                                    <option value="FAULT-DOMAIN-3" data-tenancy="ClouderaTenancy">FAULT-DOMAIN-3</option>
-                                </optgroup>
-                                <optgroup label="DemoTenancy">
-                                    <option value="FAULT-DOMAIN-1" data-tenancy="DemoTenancy">FAULT-DOMAIN-1</option>
-                                    <option value="FAULT-DOMAIN-2" data-tenancy="DemoTenancy">FAULT-DOMAIN-2</option>
-                                    <option value="FAULT-DOMAIN-3" data-tenancy="DemoTenancy">FAULT-DOMAIN-3</option>
-                                </optgroup>
-                                <optgroup label="StarTenancy">
-                                    <option value="FAULT-DOMAIN-1" data-tenancy="StarTenancy">FAULT-DOMAIN-1</option>
-                                    <option value="FAULT-DOMAIN-2" data-tenancy="StarTenancy">FAULT-DOMAIN-2</option>
-                                    <option value="FAULT-DOMAIN-3" data-tenancy="StarTenancy">FAULT-DOMAIN-3</option>
-                                </optgroup>
                             </select>
                             <button onclick="resetTab2Filters()" style="padding: 8px 12px; margin: 5px; background: var(--danger); color: white; border: none; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-redo"></i> Reset All Filters</button>
                             <button onclick="exportInstancesToExcel()" style="padding: 8px 12px; margin: 5px; background: var(--success); color: white; border: none; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-file-excel"></i> Export to Excel</button>
@@ -1244,862 +1134,6 @@
                         <table id="instanceTable">
                             <thead><tr><th>Tenancy</th><th>Compartment</th><th>Name</th><th>State</th><th>OCPUs</th><th>Memory (GB)</th><th>AD</th><th>Fault Domains</th><th>MAC Address</th><th>Private IP</th><th>Public IP</th><th>Recovery</th><th>Created</th><th>Shape</th><th>Compartment ID</th><th>Instance ID</th></tr></thead>
                             <tbody>
-                                <tr class='instance-row' 
-                                    data-tenancy="AcmeCorpTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.se248ftk2vkbyqwno867k8iosoqmdc1mh6nf2psqn9s8cobuwhak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.83bh1stirnscg2a4lsxiuq05ycpif6vcyav80z31piojhcb9d5y8r5znrcnh"><td>AcmeCorpTenancy</td><td>ROOT</td><td>testvm1</td><td>STOPPED</td><td>8.0</td><td>64.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:e3:4f:bb</td><td>165.249.1.3</td><td>10.1.102.70</td><td>RESTORE_INSTANCE</td><td>2025-01-09</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.se248ftk2vkbyqwno867k8iosoqmdc1mh6nf2psqn9s8cobuwhak00090146</td><td>ocid1.instance.AK03317140.pcax10.83bh1stirnscg2a4lsxiuq05ycpif6vcyav80z31piojhcb9d5y8r5znrcnh</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="AcmeCorpTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.se248ftk2vkbyqwno867k8iosoqmdc1mh6nf2psqn9s8cobuwhak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.1zq8sumqiy4imfdingjnum7of6dhyg2ihrr5elcbsn2j62wz2yfiedyzoj4l"><td>AcmeCorpTenancy</td><td>ROOT</td><td>testvm2</td><td>STOPPED</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:c5:fe:fd</td><td>165.249.2.3</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-03-11</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.se248ftk2vkbyqwno867k8iosoqmdc1mh6nf2psqn9s8cobuwhak00090146</td><td>ocid1.instance.AK03317140.pcax10.1zq8sumqiy4imfdingjnum7of6dhyg2ihrr5elcbsn2j62wz2yfiedyzoj4l</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="AcmeCorpTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.se248ftk2vkbyqwno867k8iosoqmdc1mh6nf2psqn9s8cobuwhak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.m0hwbv8q3m5ycets209vys38hoslinj7cshian6le33imd1pqib4eee68b4r"><td>AcmeCorpTenancy</td><td>ROOT</td><td>testvm3</td><td>STOPPED</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:ff:95:1d</td><td>165.249.1.4</td><td>10.1.102.124</td><td>RESTORE_INSTANCE</td><td>2025-04-28</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.se248ftk2vkbyqwno867k8iosoqmdc1mh6nf2psqn9s8cobuwhak00090146</td><td>ocid1.instance.AK03317140.pcax10.m0hwbv8q3m5ycets209vys38hoslinj7cshian6le33imd1pqib4eee68b4r</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="AcmeCorpTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.se248ftk2vkbyqwno867k8iosoqmdc1mh6nf2psqn9s8cobuwhak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.3whuodx7xoyzn8eu59pjul7ycro1mb82xkz33eu7h69deihii5zew2n51use"><td>AcmeCorpTenancy</td><td>ROOT</td><td>Win10</td><td>STOPPED</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:45:70:1c</td><td>10.1.102.132</td><td>N/A</td><td>STOP_INSTANCE</td><td>2025-04-21</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.se248ftk2vkbyqwno867k8iosoqmdc1mh6nf2psqn9s8cobuwhak00090146</td><td>ocid1.instance.AK03317140.pcax10.3whuodx7xoyzn8eu59pjul7ycro1mb82xkz33eu7h69deihii5zew2n51use</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="AcmeCorpTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.se248ftk2vkbyqwno867k8iosoqmdc1mh6nf2psqn9s8cobuwhak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.95nh01lelr63hxbxyxjfbg8man5sfzeeo19bewdy4quzjrdzmwjqprm6kiba"><td>AcmeCorpTenancy</td><td>ROOT</td><td>Win2k19VM1</td><td>STOPPED</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:d5:6c:2b</td><td>10.1.102.131</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-04-21</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.se248ftk2vkbyqwno867k8iosoqmdc1mh6nf2psqn9s8cobuwhak00090146</td><td>ocid1.instance.AK03317140.pcax10.95nh01lelr63hxbxyxjfbg8man5sfzeeo19bewdy4quzjrdzmwjqprm6kiba</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="AcmeCorpTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.se248ftk2vkbyqwno867k8iosoqmdc1mh6nf2psqn9s8cobuwhak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.b6wyhw5sw1os3uw4jw86ygjg3jhk39kyae2ypfjv4ae3pwbn17l8ncg1zo4n"><td>AcmeCorpTenancy</td><td>ROOT</td><td>Win2k22vm1</td><td>STOPPED</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:20:5d:31</td><td>10.1.102.130</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-04-21</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.se248ftk2vkbyqwno867k8iosoqmdc1mh6nf2psqn9s8cobuwhak00090146</td><td>ocid1.instance.AK03317140.pcax10.b6wyhw5sw1os3uw4jw86ygjg3jhk39kyae2ypfjv4ae3pwbn17l8ncg1zo4n</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="AcmeCorpTenancy"
-                                    data-compartment="KK_Compartment_1"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.8hw2wwd7iwlkwqp1joydnyuuuktlv4tymf9ng1naor1jxzonnmxjmvos669o"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.9ihkn6kre1ff22gnp8p32g961irb6ogz1mqizchmx7d7m84azhd46q36kgra"><td>AcmeCorpTenancy</td><td>KK_Compartment_1</td><td>inst-2c57b-KK_IP</td><td>STOPPED</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:9e:95:5d</td><td>140.1.1.3</td><td>10.1.102.66</td><td>RESTORE_INSTANCE</td><td>2025-03-13</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.8hw2wwd7iwlkwqp1joydnyuuuktlv4tymf9ng1naor1jxzonnmxjmvos669o</td><td>ocid1.instance.AK03317140.pcax10.9ihkn6kre1ff22gnp8p32g961irb6ogz1mqizchmx7d7m84azhd46q36kgra</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="AcmeCorpTenancy"
-                                    data-compartment="KK_Compartment_1"
-                                    data-state="STARTING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.8hw2wwd7iwlkwqp1joydnyuuuktlv4tymf9ng1naor1jxzonnmxjmvos669o"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.bzhevfctl5966pbz6zbnx1d7bec6zpa4tdla0ppr6wxhenx6lfs6v1nrj65e"><td>AcmeCorpTenancy</td><td>KK_Compartment_1</td><td>KK_Instance_1</td><td>STARTING</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:16:07:02</td><td>140.1.1.2</td><td>10.1.102.74</td><td>RESTORE_INSTANCE</td><td>2025-03-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.8hw2wwd7iwlkwqp1joydnyuuuktlv4tymf9ng1naor1jxzonnmxjmvos669o</td><td>ocid1.instance.AK03317140.pcax10.bzhevfctl5966pbz6zbnx1d7bec6zpa4tdla0ppr6wxhenx6lfs6v1nrj65e</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_CBP"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.svud7mdkxn59nt070l6nflwjdmcsrb66pz1cuo4e4ths5inrlj07tud4ey3g"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.vyz1hb6hbbk0x4o7m42nb4t6o601zqdadd1sunfo234muv9decori8ovs8xh"><td>BumblebeeTenancy</td><td>Compt_CBP</td><td>cbpvm1</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:e8:cf:48</td><td>192.168.230.2</td><td>10.1.102.81</td><td>RESTORE_INSTANCE</td><td>2025-04-28</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.svud7mdkxn59nt070l6nflwjdmcsrb66pz1cuo4e4ths5inrlj07tud4ey3g</td><td>ocid1.instance.AK03317140.pcax10.vyz1hb6hbbk0x4o7m42nb4t6o601zqdadd1sunfo234muv9decori8ovs8xh</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_CBP"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.svud7mdkxn59nt070l6nflwjdmcsrb66pz1cuo4e4ths5inrlj07tud4ey3g"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.kgzskj9bbibpc3kypoecb5915ogv4uapdu4j45783jq7719g20lpckayhw4a"><td>BumblebeeTenancy</td><td>Compt_CBP</td><td>cbpvm2</td><td>RUNNING</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:6d:cf:e0</td><td>192.168.231.2</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-04-28</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.svud7mdkxn59nt070l6nflwjdmcsrb66pz1cuo4e4ths5inrlj07tud4ey3g</td><td>ocid1.instance.AK03317140.pcax10.kgzskj9bbibpc3kypoecb5915ogv4uapdu4j45783jq7719g20lpckayhw4a</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.bf6sxhjf5dxzs64v37uopoa3cfywbc828hqu3sbair5w9r5f2qh85if3co6d"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>dav-oel9</td><td>RUNNING</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:93:59:88</td><td>10.0.1.2</td><td>10.1.102.141</td><td>STOP_INSTANCE</td><td>2025-09-23</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.bf6sxhjf5dxzs64v37uopoa3cfywbc828hqu3sbair5w9r5f2qh85if3co6d</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.lqff9cc6jxmtwuzlmvd95dcwqxy2m2xgzynmyr106wga4esac4objjnvqa9q"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>oel7</td><td>RUNNING</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:a7:89:35</td><td>10.0.2.31</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-04</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.lqff9cc6jxmtwuzlmvd95dcwqxy2m2xgzynmyr106wga4esac4objjnvqa9q</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.5eirko9h4b308yu42chrq9wxhvf34r8bn2gd6gidjhshlt6hytvtb4d78r5i"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>oel8</td><td>RUNNING</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:9d:52:c3</td><td>10.0.2.33</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-04</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.5eirko9h4b308yu42chrq9wxhvf34r8bn2gd6gidjhshlt6hytvtb4d78r5i</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.acma4cb2ef7gtnzpz5oygwgo2ckf8d0j1q4878x6x4fnu3ul34884178i75j"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>oel9</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:82:97:fe</td><td>10.0.2.3</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-22</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.acma4cb2ef7gtnzpz5oygwgo2ckf8d0j1q4878x6x4fnu3ul34884178i75j</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.0jjdr5igmbum9cgxu02gt2zijg7j80b9x1bsri1qt06vvmpldmc7iroyzv9z"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-rhel10-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:bd:80:a5</td><td>10.0.2.11</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-01</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.0jjdr5igmbum9cgxu02gt2zijg7j80b9x1bsri1qt06vvmpldmc7iroyzv9z</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.dr9c29gd85rvr2n5i402zylgzrpuh97t95y9t5mtivfw2zj8oznzusnxu9lx"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-rhel10-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:79:d9:c4</td><td>10.0.2.12</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-01</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.dr9c29gd85rvr2n5i402zylgzrpuh97t95y9t5mtivfw2zj8oznzusnxu9lx</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.8ec5ea6pl95wei88uh4f66pq5fg7ka1rzap7ghm7r7o68tssjk20rsln2bs3"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-rhel7-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:a5:78:99</td><td>10.0.2.13</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-01</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.8ec5ea6pl95wei88uh4f66pq5fg7ka1rzap7ghm7r7o68tssjk20rsln2bs3</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.2my6x2tcixxe5blbs8qiqq89tb2z059nozpqyq3q952vinp9ya066pc1axs3"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-rhel7-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:5e:3a:da</td><td>10.0.2.14</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-01</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.2my6x2tcixxe5blbs8qiqq89tb2z059nozpqyq3q952vinp9ya066pc1axs3</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.copo5vkb01ltzrp8obamz3n8j1iszrts5m1ipkt6qwd55h1vq2q21u1j1vm7"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-rhel8-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:33:46:8b</td><td>10.0.2.19</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-01</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.copo5vkb01ltzrp8obamz3n8j1iszrts5m1ipkt6qwd55h1vq2q21u1j1vm7</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.epnbdz5ohj7huchnnt1m4jiqz2a0efk3hv2ikimi3ftrsahofa1tjd7anwzt"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-rhel8-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:df:bc:94</td><td>10.0.2.4</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-01</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.epnbdz5ohj7huchnnt1m4jiqz2a0efk3hv2ikimi3ftrsahofa1tjd7anwzt</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.90ez5vyzojnrrtx29zrhz81ro8szho0rt5uy88sdy8y4wa91yji71t264oy6"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-rhel9-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:a6:03:72</td><td>10.0.2.15</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-01</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.90ez5vyzojnrrtx29zrhz81ro8szho0rt5uy88sdy8y4wa91yji71t264oy6</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.6yues675q8cteqhznvq6q9ed92ts0u1a41n8ayi7whi1i9mi6ui6524fl7ap"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-rhel9-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:9b:a1:99</td><td>10.0.2.10</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-01</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.6yues675q8cteqhznvq6q9ed92ts0u1a41n8ayi7whi1i9mi6ui6524fl7ap</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.wkulgw4h01hgpnqyb9xuz1nlhxdguwgskhi2tjwoembxeylse0vdn79s1pvs"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win11-pro-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:c0:98:04</td><td>10.0.2.29</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.wkulgw4h01hgpnqyb9xuz1nlhxdguwgskhi2tjwoembxeylse0vdn79s1pvs</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.4ivewst0w4l48zh1mqmihytkj1lbt4o2741yqm9zfmpho320hguog9fsivsj"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2012r2-dc-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:95:f4:74</td><td>10.0.2.30</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.4ivewst0w4l48zh1mqmihytkj1lbt4o2741yqm9zfmpho320hguog9fsivsj</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.trgddvxwaxdau5itagtgcwopw53f34jem0ekezdmikd3oxtul1pvs17kuz3y"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2012r2-dc-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:e8:38:4d</td><td>10.0.2.32</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.trgddvxwaxdau5itagtgcwopw53f34jem0ekezdmikd3oxtul1pvs17kuz3y</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.jmq5vhq6965ex3fxmmxzvhofxxs3jwyhf02q33jmj06hkyk6o2ymio4bm9mg"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2012r2-std-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:3c:77:ca</td><td>10.0.2.2</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.jmq5vhq6965ex3fxmmxzvhofxxs3jwyhf02q33jmj06hkyk6o2ymio4bm9mg</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.zaj8alg4gs5xdxv2t9ijmf18a3n4kgy87402i5r7upt1fq7dv1vlnzqy2x0i"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2012r2-std-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:76:f3:d8</td><td>10.0.2.6</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.zaj8alg4gs5xdxv2t9ijmf18a3n4kgy87402i5r7upt1fq7dv1vlnzqy2x0i</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.sf52rfuytj85awxutsl6tzfz6yjcq20qg9sui5rp0mak0cnssjmjw5ibx3g5"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2016-dc-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:ae:d8:2e</td><td>10.0.2.18</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.sf52rfuytj85awxutsl6tzfz6yjcq20qg9sui5rp0mak0cnssjmjw5ibx3g5</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.wjm75iq0iq4anr62wvutm1vnkwzpuqf6ubuhrw6kmmt1aeeuqyq0mrtftor5"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2016-dc-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:fd:34:a2</td><td>10.0.2.28</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.wjm75iq0iq4anr62wvutm1vnkwzpuqf6ubuhrw6kmmt1aeeuqyq0mrtftor5</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.wsolo0emp7t9mxx09xm1f0l7p1z6r0ipcnhv9svj6juzjwdtuiic9oya83kf"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2016-std-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:7e:b9:df</td><td>10.0.2.34</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.wsolo0emp7t9mxx09xm1f0l7p1z6r0ipcnhv9svj6juzjwdtuiic9oya83kf</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.rdykic1q5qzr7r4ah7n15lyqrosrf9rd13e67jzq7pvq6klx2dpe9cx8hyl7"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2016-std-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:d8:b4:a3</td><td>10.0.2.16</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.rdykic1q5qzr7r4ah7n15lyqrosrf9rd13e67jzq7pvq6klx2dpe9cx8hyl7</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.l4y886twnz2fz95pnnb7gvxnklldk319eh2vgafo64rdaiomsd6ws6j1igcd"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2019-dc-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:91:6b:1f</td><td>10.0.2.5</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.l4y886twnz2fz95pnnb7gvxnklldk319eh2vgafo64rdaiomsd6ws6j1igcd</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.d27nre7urcy5b5o8appj0645q2bmxq44gk1wm4ypqn6uu8zopbsfa8xrmnbf"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2019-dc-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:f1:23:1d</td><td>10.0.2.17</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.d27nre7urcy5b5o8appj0645q2bmxq44gk1wm4ypqn6uu8zopbsfa8xrmnbf</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.7upq5q25p9yp2a3vr8k5q10j50vw32gdypd05slp0ovc6ofg3euvk72hwtco"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2019-std-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:96:24:4d</td><td>10.0.2.20</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.7upq5q25p9yp2a3vr8k5q10j50vw32gdypd05slp0ovc6ofg3euvk72hwtco</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.sbaiduhn5jywk4gzuun6myv67fujn58qqm31edduy1t310qxevbcrboam5jl"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2019-std-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:29:c2:80</td><td>10.0.2.21</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.sbaiduhn5jywk4gzuun6myv67fujn58qqm31edduy1t310qxevbcrboam5jl</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.coa17110tdp60p7lhozaxbnqp7839uwoz73kb6mdrtt3ib4m879g9sl7t0lt"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2022-dc-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:43:30:26</td><td>10.0.2.22</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.coa17110tdp60p7lhozaxbnqp7839uwoz73kb6mdrtt3ib4m879g9sl7t0lt</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.wv64pvlzxl1tbw39xfbpn3dbmvu9r9hldjwjgmszmhktcpby8r5a5uqrdpyt"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2022-dc-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:5f:38:c0</td><td>10.0.2.23</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.wv64pvlzxl1tbw39xfbpn3dbmvu9r9hldjwjgmszmhktcpby8r5a5uqrdpyt</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.mv348pbjvckhygr0hyq04iz09cnf7ysodiy4jbi9ycepiohf9ad42xmkvs18"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2022-std-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:b8:a2:e7</td><td>10.0.2.7</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.mv348pbjvckhygr0hyq04iz09cnf7ysodiy4jbi9ycepiohf9ad42xmkvs18</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.oh5gbxxe5nq9ik2ttvfehq9ivm70cm1641jf622wp5qienxnpg8jpvzg26mq"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2022-std-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:3e:bb:f8</td><td>10.0.2.8</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.oh5gbxxe5nq9ik2ttvfehq9ivm70cm1641jf622wp5qienxnpg8jpvzg26mq</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.uuskwn135w1hbuxlboo61aozmpx2ov3cjfbqsd27qc9sepkf1imtg6sggb3e"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2025-dc-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:8e:12:82</td><td>10.0.2.9</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.uuskwn135w1hbuxlboo61aozmpx2ov3cjfbqsd27qc9sepkf1imtg6sggb3e</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.gnxtr99mp8ipl4en3v2vam5efz8eyznuodnbmccir1607nutw1qyg83kmfiv"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2025-dc-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:f4:4b:87</td><td>10.0.2.24</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.gnxtr99mp8ipl4en3v2vam5efz8eyznuodnbmccir1607nutw1qyg83kmfiv</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.jsjtfzr5bzjo6kzzya97c0x8ysq2rwxenracrjpc3d0b4d7ascmbjke52ur3"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2025-std-bios</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:56:6c:b9</td><td>10.0.2.25</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.jsjtfzr5bzjo6kzzya97c0x8ysq2rwxenracrjpc3d0b4d7ascmbjke52ur3</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.eog8xoalc6ylp7fstya0wmpo68enzdyf9bj8xugepcggtw2z0yplimpkwuu1"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>pca-byoi-win2025-std-uefi</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:39:75:d9</td><td>10.0.2.26</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-08</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.eog8xoalc6ylp7fstya0wmpo68enzdyf9bj8xugepcggtw2z0yplimpkwuu1</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Dav"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.0c7qys06a3wo076t44846ji2nezvq5l3z7yw9ws5it5qpth2rpmwoj3segct"><td>BumblebeeTenancy</td><td>Compt_Dav</td><td>testing</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:2d:82:a6</td><td>10.0.2.36</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-31</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.jwbzhc97qvwxqkbv43gpsf98n72ama26zdpr0dewitozml6fk5grq3hqa22n</td><td>ocid1.instance.AK03317140.pcax10.0c7qys06a3wo076t44846ji2nezvq5l3z7yw9ws5it5qpth2rpmwoj3segct</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Kit"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.7mgh8dlw0uq8gnb5dvs93npk80n2iobgmiax1ujkqentcjx8itzjudn9q5j9"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.ml3tgw4llxy5h6vowx8gu4ft7csa6qcyrrcz7hahiopie8c19xf2xk9d38ma"><td>BumblebeeTenancy</td><td>Compt_Kit</td><td>ee23ai-rac-node1</td><td>RUNNING</td><td>4.0</td><td>64.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:a3:b7:aa</td><td>10.18.18.2</td><td>10.1.102.139</td><td>RESTORE_INSTANCE</td><td>2025-08-22</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.7mgh8dlw0uq8gnb5dvs93npk80n2iobgmiax1ujkqentcjx8itzjudn9q5j9</td><td>ocid1.instance.AK03317140.pcax10.ml3tgw4llxy5h6vowx8gu4ft7csa6qcyrrcz7hahiopie8c19xf2xk9d38ma</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Kit"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.7mgh8dlw0uq8gnb5dvs93npk80n2iobgmiax1ujkqentcjx8itzjudn9q5j9"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.1dcbsdbont0i0ltcy4ow7zucj2tygvnp4c5qfsf9v9d04djbcgd96hoyowb3"><td>BumblebeeTenancy</td><td>Compt_Kit</td><td>ee23ai-rac-node2</td><td>RUNNING</td><td>4.0</td><td>64.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:e9:3f:a5</td><td>10.18.18.3</td><td>10.1.102.131</td><td>RESTORE_INSTANCE</td><td>2025-08-22</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.7mgh8dlw0uq8gnb5dvs93npk80n2iobgmiax1ujkqentcjx8itzjudn9q5j9</td><td>ocid1.instance.AK03317140.pcax10.1dcbsdbont0i0ltcy4ow7zucj2tygvnp4c5qfsf9v9d04djbcgd96hoyowb3</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Kit"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.7mgh8dlw0uq8gnb5dvs93npk80n2iobgmiax1ujkqentcjx8itzjudn9q5j9"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.s7n34uwc0in9y8luj9s99c4mh8uidzqwczau4r3x6danqfncxzfzn6sm8eht"><td>BumblebeeTenancy</td><td>Compt_Kit</td><td>ee23ai-si</td><td>STOPPED</td><td>4.0</td><td>48.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:f1:6b:62</td><td>10.18.18.6</td><td>10.1.102.155</td><td>STOP_INSTANCE</td><td>2025-08-28</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.7mgh8dlw0uq8gnb5dvs93npk80n2iobgmiax1ujkqentcjx8itzjudn9q5j9</td><td>ocid1.instance.AK03317140.pcax10.s7n34uwc0in9y8luj9s99c4mh8uidzqwczau4r3x6danqfncxzfzn6sm8eht</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Muni"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.sb565byiduktulrwj5zpwshex1ukfw2ye3wq7x080t617jfze6jd88g6yzov"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.plvqfhbzq7gro3hafccz5qisittzzokh03qcgbt48006ka9x36i1zmncv97j"><td>BumblebeeTenancy</td><td>Compt_Muni</td><td>testvm3</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:78:34:cb</td><td>10.0.0.3</td><td>10.1.102.149</td><td>RESTORE_INSTANCE</td><td>2025-08-27</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.sb565byiduktulrwj5zpwshex1ukfw2ye3wq7x080t617jfze6jd88g6yzov</td><td>ocid1.instance.AK03317140.pcax10.plvqfhbzq7gro3hafccz5qisittzzokh03qcgbt48006ka9x36i1zmncv97j</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_Muni"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.sb565byiduktulrwj5zpwshex1ukfw2ye3wq7x080t617jfze6jd88g6yzov"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.kvwlahbk0ygyjp5jgpslqn7t1mbu6hjdhgayjul1ibs7h5c9udwpo32kcb5d"><td>BumblebeeTenancy</td><td>Compt_Muni</td><td>testvm4</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:b6:77:27</td><td>10.0.1.2</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-08-27</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.sb565byiduktulrwj5zpwshex1ukfw2ye3wq7x080t617jfze6jd88g6yzov</td><td>ocid1.instance.AK03317140.pcax10.kvwlahbk0ygyjp5jgpslqn7t1mbu6hjdhgayjul1ibs7h5c9udwpo32kcb5d</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_PCW"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.hzq0oiacgu934cklmiqlx4oy97vts9j28j1thcm4u0td3ct9c20b0ccs5u3h"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.wae6r09nnyip0qkyi25fwawr75aurjl3c3iypl5pq5zhkq9xezasqekff7hp"><td>BumblebeeTenancy</td><td>Compt_PCW</td><td>PangLinux</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:ce:b9:dc</td><td>172.168.100.2</td><td>10.1.102.138</td><td>RESTORE_INSTANCE</td><td>2025-08-27</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.hzq0oiacgu934cklmiqlx4oy97vts9j28j1thcm4u0td3ct9c20b0ccs5u3h</td><td>ocid1.instance.AK03317140.pcax10.wae6r09nnyip0qkyi25fwawr75aurjl3c3iypl5pq5zhkq9xezasqekff7hp</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_PCY"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.r8grdi3kco1c7gsr5y8xh285hr7b20my67att3mdtluy8oi9ocrrb5hazm8j"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.clwsm79ui8quu4xes5n8octx9plv38uxwh47z1yrn8d0rncrtf4xyiadijqp"><td>BumblebeeTenancy</td><td>Compt_PCY</td><td>db19rac-pcy-node1</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:b3:02:8f</td><td>10.1.0.7</td><td>10.1.102.170</td><td>RESTORE_INSTANCE</td><td>2025-10-09</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.r8grdi3kco1c7gsr5y8xh285hr7b20my67att3mdtluy8oi9ocrrb5hazm8j</td><td>ocid1.instance.AK03317140.pcax10.clwsm79ui8quu4xes5n8octx9plv38uxwh47z1yrn8d0rncrtf4xyiadijqp</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_PCY"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.r8grdi3kco1c7gsr5y8xh285hr7b20my67att3mdtluy8oi9ocrrb5hazm8j"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.mrp96dujl630gmyx3ysopk93p2kjzalalwthj7njqzymwnsa6j491dvtmqrc"><td>BumblebeeTenancy</td><td>Compt_PCY</td><td>db19rac-pcy-node2</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:71:01:99</td><td>10.1.0.8</td><td>10.1.102.133</td><td>STOP_INSTANCE</td><td>2025-10-09</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.r8grdi3kco1c7gsr5y8xh285hr7b20my67att3mdtluy8oi9ocrrb5hazm8j</td><td>ocid1.instance.AK03317140.pcax10.mrp96dujl630gmyx3ysopk93p2kjzalalwthj7njqzymwnsa6j491dvtmqrc</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_PCY"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.r8grdi3kco1c7gsr5y8xh285hr7b20my67att3mdtluy8oi9ocrrb5hazm8j"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.4h9o2vo4ruqd9kpr52d9dwfg41fpldfhpv527ww62wvl2uu62u5noljddsfc"><td>BumblebeeTenancy</td><td>Compt_PCY</td><td>db23ai-pcy-node1</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:a6:f5:0d</td><td>10.1.0.2</td><td>10.1.102.134</td><td>RESTORE_INSTANCE</td><td>2025-09-04</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.r8grdi3kco1c7gsr5y8xh285hr7b20my67att3mdtluy8oi9ocrrb5hazm8j</td><td>ocid1.instance.AK03317140.pcax10.4h9o2vo4ruqd9kpr52d9dwfg41fpldfhpv527ww62wvl2uu62u5noljddsfc</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="BumblebeeTenancy"
-                                    data-compartment="Compt_PCY"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.r8grdi3kco1c7gsr5y8xh285hr7b20my67att3mdtluy8oi9ocrrb5hazm8j"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.7u6byhd4px1mkks85se0v9v9g5rbniswmh4nnc7vh840r1wesc71tdfu56dk"><td>BumblebeeTenancy</td><td>Compt_PCY</td><td>db23ai-pcy-node2</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:e4:70:62</td><td>10.1.0.3</td><td>10.1.102.83</td><td>RESTORE_INSTANCE</td><td>2025-09-04</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.r8grdi3kco1c7gsr5y8xh285hr7b20my67att3mdtluy8oi9ocrrb5hazm8j</td><td>ocid1.instance.AK03317140.pcax10.7u6byhd4px1mkks85se0v9v9g5rbniswmh4nnc7vh840r1wesc71tdfu56dk</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.u6zeha1292ejts450e0vtp7xopauj32ihnt6atza1y88bkb8oxe4v47m7fo2"><td>ClouderaTenancy</td><td>ROOT</td><td>cdp-base-master-1</td><td>RUNNING</td><td>16.0</td><td>128.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:9b:5a:66</td><td>10.0.1.3</td><td>10.1.102.88</td><td>RESTORE_INSTANCE</td><td>2025-02-28</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.u6zeha1292ejts450e0vtp7xopauj32ihnt6atza1y88bkb8oxe4v47m7fo2</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.dlzq2r1ifl3cegcot5819065w0c4pg94uacjo4qwodmuxs4dd0ykvamuqfct"><td>ClouderaTenancy</td><td>ROOT</td><td>cdp-base-master-2</td><td>STOPPED</td><td>16.0</td><td>128.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:a9:25:80</td><td>10.0.1.4</td><td>10.1.102.110</td><td>STOP_INSTANCE</td><td>2025-03-03</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.dlzq2r1ifl3cegcot5819065w0c4pg94uacjo4qwodmuxs4dd0ykvamuqfct</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.fb101h0yb0dge3uv73xaecrudo52bu6vkpg3k20u1b96q3igq7q49iwub4tu"><td>ClouderaTenancy</td><td>ROOT</td><td>cdp-base-master-3</td><td>RUNNING</td><td>16.0</td><td>128.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:4e:0e:65</td><td>10.0.1.5</td><td>10.1.102.91</td><td>RESTORE_INSTANCE</td><td>2025-03-03</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.fb101h0yb0dge3uv73xaecrudo52bu6vkpg3k20u1b96q3igq7q49iwub4tu</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.c40vky49ckj3j27srefd1q52n4par9qfd40ezw9sxf597ch370bqq60sg7ot"><td>ClouderaTenancy</td><td>ROOT</td><td>cdp-base-worker-1</td><td>RUNNING</td><td>16.0</td><td>128.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:a1:07:11</td><td>10.0.1.7</td><td>10.1.102.96</td><td>RESTORE_INSTANCE</td><td>2025-03-03</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.c40vky49ckj3j27srefd1q52n4par9qfd40ezw9sxf597ch370bqq60sg7ot</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.bs51tkquhpmbxk4r4229xz6z9umezsn3fx7bkw3r3zhfmccmycb0sxdiypwa"><td>ClouderaTenancy</td><td>ROOT</td><td>cdp-base-worker-2</td><td>RUNNING</td><td>16.0</td><td>128.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:38:58:a9</td><td>10.0.1.8</td><td>10.1.102.102</td><td>RESTORE_INSTANCE</td><td>2025-03-03</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.bs51tkquhpmbxk4r4229xz6z9umezsn3fx7bkw3r3zhfmccmycb0sxdiypwa</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="STARTING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.efjfwut7xdtyqpq2i21jw4xq6z4yhkb9ozrvgnue1p805c9hfdb1xcztim31"><td>ClouderaTenancy</td><td>ROOT</td><td>cdp-base-worker-3</td><td>STARTING</td><td>16.0</td><td>128.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:56:36:9c</td><td>10.0.1.9</td><td>10.1.102.108</td><td>RESTORE_INSTANCE</td><td>2025-03-03</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.efjfwut7xdtyqpq2i21jw4xq6z4yhkb9ozrvgnue1p805c9hfdb1xcztim31</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.a0bnv2aq1ydc42qyxvpa3jkpsgjkjn90tlj91z4taqw5c83obt2x33wex3z9"><td>ClouderaTenancy</td><td>ROOT</td><td>cdp-base-worker-4</td><td>RUNNING</td><td>16.0</td><td>128.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:50:37:f7</td><td>10.0.1.15</td><td>10.1.102.120</td><td>RESTORE_INSTANCE</td><td>2025-06-23</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.a0bnv2aq1ydc42qyxvpa3jkpsgjkjn90tlj91z4taqw5c83obt2x33wex3z9</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.m5fqk6wgn1j90oacyxd0fcsidmjsgeg7t6eb0r0v6sr8vg7d3jeeh4bldlb4"><td>ClouderaTenancy</td><td>ROOT</td><td>cdp-ds-cm-1</td><td>RUNNING</td><td>16.0</td><td>160.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:44:40:5a</td><td>10.0.1.13</td><td>10.1.102.67</td><td>RESTORE_INSTANCE</td><td>2025-03-03</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.m5fqk6wgn1j90oacyxd0fcsidmjsgeg7t6eb0r0v6sr8vg7d3jeeh4bldlb4</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.6wpxox737x1dxbf67kdtqo3oz96r22ix456y5i3yoep8xb5e2ozgm5vq38m3"><td>ClouderaTenancy</td><td>ROOT</td><td>cdp-ds-cp-1</td><td>RUNNING</td><td>16.0</td><td>160.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:74:59:8e</td><td>10.0.1.10</td><td>10.1.102.71</td><td>RESTORE_INSTANCE</td><td>2025-03-03</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.6wpxox737x1dxbf67kdtqo3oz96r22ix456y5i3yoep8xb5e2ozgm5vq38m3</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.36x5tu19ba7ivdun6yuths7x9gcx7foxvecf67s0cfd4tyj3uajsgh4e4dvn"><td>ClouderaTenancy</td><td>ROOT</td><td>cdp-ds-db-1</td><td>RUNNING</td><td>16.0</td><td>32.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:84:8c:fd</td><td>10.0.1.16</td><td>10.1.102.72</td><td>RESTORE_INSTANCE</td><td>2025-04-21</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.36x5tu19ba7ivdun6yuths7x9gcx7foxvecf67s0cfd4tyj3uajsgh4e4dvn</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.epa2jytk06b7kx5mcqgjyr472o2ip3vjxy5c7kck3uzdjfrj304rpuyejrux"><td>ClouderaTenancy</td><td>ROOT</td><td>cdp-ds-ultility-1</td><td>RUNNING</td><td>16.0</td><td>160.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:26:8e:92</td><td>10.0.1.17</td><td>10.1.102.123</td><td>RESTORE_INSTANCE</td><td>2025-04-21</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.epa2jytk06b7kx5mcqgjyr472o2ip3vjxy5c7kck3uzdjfrj304rpuyejrux</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.51mz4bbc517tyb0caut6k2havayg2hkrq3ttcf0eysyw004f2q5pkrt5i5yg"><td>ClouderaTenancy</td><td>ROOT</td><td>cdp-ds-worker-1</td><td>RUNNING</td><td>24.0</td><td>88.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:20:cb:bb</td><td>10.0.1.11</td><td>10.1.102.119</td><td>RESTORE_INSTANCE</td><td>2025-03-03</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.51mz4bbc517tyb0caut6k2havayg2hkrq3ttcf0eysyw004f2q5pkrt5i5yg</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.zekjam7ewqsj6wzujh7u65twcw8o72om8dvav7grxpvpfs2udjmrc0nfl6yl"><td>ClouderaTenancy</td><td>ROOT</td><td>cdp-edge-gateway-1</td><td>RUNNING</td><td>16.0</td><td>128.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:bd:46:6a</td><td>10.0.1.6</td><td>10.1.102.117</td><td>RESTORE_INSTANCE</td><td>2025-03-03</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.zekjam7ewqsj6wzujh7u65twcw8o72om8dvav7grxpvpfs2udjmrc0nfl6yl</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.1hyxdepbf22duisc9z69cnr9kapq3k3fgmyl6v4m2na4irc5htw9jwvfgd2w"><td>ClouderaTenancy</td><td>ROOT</td><td>cm-host</td><td>RUNNING</td><td>16.0</td><td>128.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:ca:88:d6</td><td>10.0.1.2</td><td>10.1.102.116</td><td>RESTORE_INSTANCE</td><td>2025-02-28</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.1hyxdepbf22duisc9z69cnr9kapq3k3fgmyl6v4m2na4irc5htw9jwvfgd2w</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="ClouderaTenancy"
-                                    data-compartment="ROOT"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.d80bf0440pru0txz2p19p2dhnv2y5ff2qy9tx0zbdl0odvn8u0p2ucycxlvs"><td>ClouderaTenancy</td><td>ROOT</td><td>tvm</td><td>STOPPED</td><td>16.0</td><td>160.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:b0:a3:e5</td><td>10.0.1.14</td><td>10.1.102.118</td><td>STOP_INSTANCE</td><td>2025-06-13</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.tenancy.AK03317140.pcax10.wm8usk9hfi1qwlp0c5uqnny03a9ogzk5regwga6j7h5d1du8klak00090146</td><td>ocid1.instance.AK03317140.pcax10.d80bf0440pru0txz2p19p2dhnv2y5ff2qy9tx0zbdl0odvn8u0p2ucycxlvs</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="Dashboard_demo"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.tged3opisc9b5pyrwrpalzxff8amspwu1c0u0ftr5le5k49gus0dytcjujbt"><td>DemoTenancy</td><td>Dashboard_demo</td><td>Bronze</td><td>RUNNING</td><td>1.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:c7:c0:db</td><td>192.168.2.3</td><td>10.1.102.115</td><td>RESTORE_INSTANCE</td><td>2025-08-07</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm</td><td>ocid1.instance.AK03317140.pcax10.tged3opisc9b5pyrwrpalzxff8amspwu1c0u0ftr5le5k49gus0dytcjujbt</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="Dashboard_demo"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.eu3cc50295aen9zqt85j7ylt034h6ol25a3pvp18twcnhqhwfdymx1ox9t63"><td>DemoTenancy</td><td>Dashboard_demo</td><td>Earth</td><td>RUNNING</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:d9:5a:ef</td><td>192.168.2.6</td><td>10.1.102.129</td><td>RESTORE_INSTANCE</td><td>2025-11-10</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm</td><td>ocid1.instance.AK03317140.pcax10.eu3cc50295aen9zqt85j7ylt034h6ol25a3pvp18twcnhqhwfdymx1ox9t63</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="Dashboard_demo"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.235rmqh9odmgimn1fvoga63yx4i4o0ug2rn5jqg5vhgb5qu78u5mqlrmlaqo"><td>DemoTenancy</td><td>Dashboard_demo</td><td>Silver</td><td>RUNNING</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:2a:45:a6</td><td>192.168.2.2</td><td>10.1.102.84</td><td>RESTORE_INSTANCE</td><td>2025-08-07</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.v0bqjrqplxt3kf4cazfjzt9i02grnhpatt1jq6u2vegmptnoybpnofup93zm</td><td>ocid1.instance.AK03317140.pcax10.235rmqh9odmgimn1fvoga63yx4i4o0ug2rn5jqg5vhgb5qu78u5mqlrmlaqo</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="test_dev"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.koiu98b5sjpha6shb115ybcejg51n4j57aasrmeeebr4f0lcscx6ewmhttpo"><td>DemoTenancy</td><td>test_dev</td><td>bastion-nattapon</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:74:63:00</td><td>193.169.0.3</td><td>10.1.102.85</td><td>RESTORE_INSTANCE</td><td>2025-01-28</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6</td><td>ocid1.instance.AK03317140.pcax10.koiu98b5sjpha6shb115ybcejg51n4j57aasrmeeebr4f0lcscx6ewmhttpo</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="test_dev"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.qe1vqq5g0zvmo3yor9kju95k6s4l4xzwudturyz3dnahehmt2jgju93ehhc5"><td>DemoTenancy</td><td>test_dev</td><td>oke-404d068c00194c6b8bc6a1d60cacd7ad-mxnc8</td><td>RUNNING</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:2c:4c:c4</td><td>172.31.253.5</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-09</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6</td><td>ocid1.instance.AK03317140.pcax10.qe1vqq5g0zvmo3yor9kju95k6s4l4xzwudturyz3dnahehmt2jgju93ehhc5</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="test_dev"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.6a63d4fdzq3c00r9wy495tdb4u6kytk5v6m6isjwmcbknrbl6rowaumcw74x"><td>DemoTenancy</td><td>test_dev</td><td>oke-404d068c00194c6b8bc6a1d60cacd7ad-tm5bd</td><td>RUNNING</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:1a:61:99</td><td>172.31.253.8</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-09</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6</td><td>ocid1.instance.AK03317140.pcax10.6a63d4fdzq3c00r9wy495tdb4u6kytk5v6m6isjwmcbknrbl6rowaumcw74x</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="test_dev"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.mseumr4bvl5lae4sfngj3gs7hx8xtgivw2zuq1mgxcyf67bvwbnlfbedmdyw"><td>DemoTenancy</td><td>test_dev</td><td>oke-404d068c00194c6b8bc6a1d60cacd7ad-xsvcx</td><td>RUNNING</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:15:6d:5a</td><td>172.31.253.7</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-09</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6</td><td>ocid1.instance.AK03317140.pcax10.mseumr4bvl5lae4sfngj3gs7hx8xtgivw2zuq1mgxcyf67bvwbnlfbedmdyw</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="test_dev"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.vmbs50qaayn9wpefp1qua1gfrt0cyubvnuoi4qd196lwgy3r64owhdi4kt7k"><td>DemoTenancy</td><td>test_dev</td><td>oke-bastion</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:d8:da:15</td><td>172.31.252.5</td><td>10.1.102.103</td><td>RESTORE_INSTANCE</td><td>2025-02-07</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6</td><td>ocid1.instance.AK03317140.pcax10.vmbs50qaayn9wpefp1qua1gfrt0cyubvnuoi4qd196lwgy3r64owhdi4kt7k</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="test_dev"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.m3q5i3ewps7f4p54a17zbtdj4oaxpx9sx4qv7ew0mg6vkaa50lz51za4bc1e"><td>DemoTenancy</td><td>test_dev</td><td>oke-df2eeadf3d8446d693df4f34fd462135-control-plane-5wnsb</td><td>RUNNING</td><td>2.0</td><td>24.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:8c:3b:a3</td><td>172.31.252.227</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-11-03</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6</td><td>ocid1.instance.AK03317140.pcax10.m3q5i3ewps7f4p54a17zbtdj4oaxpx9sx4qv7ew0mg6vkaa50lz51za4bc1e</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="test_dev"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.voe33mq4y61hebyja1yexdv7c963zf1uoetjn8nkt42yx5e89r3lit72vazr"><td>DemoTenancy</td><td>test_dev</td><td>oke-df2eeadf3d8446d693df4f34fd462135-control-plane-hh9hg</td><td>RUNNING</td><td>2.0</td><td>24.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:ae:c5:35</td><td>172.31.252.226</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-09</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6</td><td>ocid1.instance.AK03317140.pcax10.voe33mq4y61hebyja1yexdv7c963zf1uoetjn8nkt42yx5e89r3lit72vazr</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="test_dev"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.cdnbqa61fddhpcsvs12u90smh1ve8il8bws661hkx3mssott4x2xsav6c0w0"><td>DemoTenancy</td><td>test_dev</td><td>oke-df2eeadf3d8446d693df4f34fd462135-control-plane-w6l8g</td><td>RUNNING</td><td>2.0</td><td>24.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:9f:77:d1</td><td>172.31.252.228</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-09</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6</td><td>ocid1.instance.AK03317140.pcax10.cdnbqa61fddhpcsvs12u90smh1ve8il8bws661hkx3mssott4x2xsav6c0w0</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="test_dev"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.icr0upp50aavtulovval0f8s1p1p7xwog5n4yrjm4zj00nhii5tkjk8ajf03"><td>DemoTenancy</td><td>test_dev</td><td>oke-f6107efde0cc489e8cc84eb7d6db3907-5dtfb</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:a1:e8:88</td><td>172.31.253.6</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-09</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6</td><td>ocid1.instance.AK03317140.pcax10.icr0upp50aavtulovval0f8s1p1p7xwog5n4yrjm4zj00nhii5tkjk8ajf03</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="test_dev"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.xe0ut63iunkb831t8goirf7axiaq5mdbne6na1blcvmu5sff4gupf7qgyile"><td>DemoTenancy</td><td>test_dev</td><td>oke-f6107efde0cc489e8cc84eb7d6db3907-bqfq4</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:46:42:8c</td><td>172.31.253.2</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-09</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6</td><td>ocid1.instance.AK03317140.pcax10.xe0ut63iunkb831t8goirf7axiaq5mdbne6na1blcvmu5sff4gupf7qgyile</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="test_dev"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.d0n6f9gb39vk0xqe9kltvnuk2jvay5wa0y3fnnap2dcudi7vo674zrimka0b"><td>DemoTenancy</td><td>test_dev</td><td>oke-f6107efde0cc489e8cc84eb7d6db3907-q5rdw</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:84:46:b0</td><td>172.31.253.3</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-09-09</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6</td><td>ocid1.instance.AK03317140.pcax10.d0n6f9gb39vk0xqe9kltvnuk2jvay5wa0y3fnnap2dcudi7vo674zrimka0b</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="test_dev"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.mtszixr7gahekm8dv4xwnq23b19qjatyd7cdviquqz1b8sb9icqi7w8oou4a"><td>DemoTenancy</td><td>test_dev</td><td>vm-in-private-subnet</td><td>RUNNING</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:4f:b2:29</td><td>193.169.1.2</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-02-13</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6</td><td>ocid1.instance.AK03317140.pcax10.mtszixr7gahekm8dv4xwnq23b19qjatyd7cdviquqz1b8sb9icqi7w8oou4a</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="DemoTenancy"
-                                    data-compartment="test_dev"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.ere8jm5dw61qp5wq0t1kjzl7c46ma4ap84h35f7iir76hqjvsr2shkm1ixch"><td>DemoTenancy</td><td>test_dev</td><td>vm1_sn1_vcndemo2</td><td>RUNNING</td><td>1.0</td><td>10.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:81:f4:c6</td><td>10.1.102.34</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-02-19</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.5s3deai2uslv6h9058z2ihg4ikdhnhn7o6u750b1viidlb6bnnccnth4rrh6</td><td>ocid1.instance.AK03317140.pcax10.ere8jm5dw61qp5wq0t1kjzl7c46ma4ap84h35f7iir76hqjvsr2shkm1ixch</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="DB23aiCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.h2srdru692vz7yzt6lwlh88c46qd1lwzoojdm03ie5e9vwxvmbdj7dpoayso"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.kgrz8c5k6tcvwl3v6ntsjbd853thp07kv4op68b1tl4rlgohtx2za7sj71nw"><td>StarTenancy</td><td>DB23aiCompt</td><td>app01</td><td>RUNNING</td><td>16.0</td><td>128.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:a8:74:45</td><td>192.168.148.3</td><td>10.1.102.106</td><td>RESTORE_INSTANCE</td><td>2025-05-27</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.h2srdru692vz7yzt6lwlh88c46qd1lwzoojdm03ie5e9vwxvmbdj7dpoayso</td><td>ocid1.instance.AK03317140.pcax10.kgrz8c5k6tcvwl3v6ntsjbd853thp07kv4op68b1tl4rlgohtx2za7sj71nw</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="DB23aiCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.h2srdru692vz7yzt6lwlh88c46qd1lwzoojdm03ie5e9vwxvmbdj7dpoayso"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.17gh1q4e9viqml52crhj4x5qbpfhoqeq2wtqvqgs9h3unbr6zfc9d1pufxkp"><td>StarTenancy</td><td>DB23aiCompt</td><td>appvm</td><td>RUNNING</td><td>4.0</td><td>64.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:ff:b5:7c</td><td>192.168.148.2</td><td>10.1.102.97</td><td>RESTORE_INSTANCE</td><td>2025-05-23</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.h2srdru692vz7yzt6lwlh88c46qd1lwzoojdm03ie5e9vwxvmbdj7dpoayso</td><td>ocid1.instance.AK03317140.pcax10.17gh1q4e9viqml52crhj4x5qbpfhoqeq2wtqvqgs9h3unbr6zfc9d1pufxkp</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="DB23aiCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.h2srdru692vz7yzt6lwlh88c46qd1lwzoojdm03ie5e9vwxvmbdj7dpoayso"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.vnmhy86tyertbd5i7w4y2bcdnzpss0ozmf266ldf3890d5ic8dodsncyidof"><td>StarTenancy</td><td>DB23aiCompt</td><td>db01</td><td>RUNNING</td><td>8.0</td><td>64.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:00:45:6b</td><td>192.168.149.2</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-05-27</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.h2srdru692vz7yzt6lwlh88c46qd1lwzoojdm03ie5e9vwxvmbdj7dpoayso</td><td>ocid1.instance.AK03317140.pcax10.vnmhy86tyertbd5i7w4y2bcdnzpss0ozmf266ldf3890d5ic8dodsncyidof</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="DB23aiCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.h2srdru692vz7yzt6lwlh88c46qd1lwzoojdm03ie5e9vwxvmbdj7dpoayso"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.8r95xs7qneifcj0sabulr9aaqtfy015hizsbzjj82i3a9f4pojx9e8765p58"><td>StarTenancy</td><td>DB23aiCompt</td><td>db23ai-rac-node1</td><td>RUNNING</td><td>4.0</td><td>64.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:51:68:55</td><td>192.168.148.10</td><td>10.1.102.79</td><td>RESTORE_INSTANCE</td><td>2025-06-04</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.h2srdru692vz7yzt6lwlh88c46qd1lwzoojdm03ie5e9vwxvmbdj7dpoayso</td><td>ocid1.instance.AK03317140.pcax10.8r95xs7qneifcj0sabulr9aaqtfy015hizsbzjj82i3a9f4pojx9e8765p58</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="DB23aiCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.h2srdru692vz7yzt6lwlh88c46qd1lwzoojdm03ie5e9vwxvmbdj7dpoayso"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.60eil1pawcg2ovmoyoe89uiyzegy941qawjnhdcu8kmpeo7pa3f3n6gyp8qx"><td>StarTenancy</td><td>DB23aiCompt</td><td>db23ai-rac-node2</td><td>RUNNING</td><td>4.0</td><td>64.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:13:13:f8</td><td>192.168.148.11</td><td>10.1.102.93</td><td>RESTORE_INSTANCE</td><td>2025-06-04</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.h2srdru692vz7yzt6lwlh88c46qd1lwzoojdm03ie5e9vwxvmbdj7dpoayso</td><td>ocid1.instance.AK03317140.pcax10.60eil1pawcg2ovmoyoe89uiyzegy941qawjnhdcu8kmpeo7pa3f3n6gyp8qx</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="InnoDBCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.wvrxl1wgtpe8u1lyssbwwwqdy6tyosrg3b936x6qy5izw3uu2yvv88w72rf5"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.3tj8dqmcgtn9tz3onlasb94awqf8rwfwe5bvyfnr52qz1fjw30kcryygj6ww"><td>StarTenancy</td><td>InnoDBCompt</td><td>app-client01</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:35:55:77</td><td>192.168.150.4</td><td>10.1.102.107</td><td>RESTORE_INSTANCE</td><td>2025-06-04</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.wvrxl1wgtpe8u1lyssbwwwqdy6tyosrg3b936x6qy5izw3uu2yvv88w72rf5</td><td>ocid1.instance.AK03317140.pcax10.3tj8dqmcgtn9tz3onlasb94awqf8rwfwe5bvyfnr52qz1fjw30kcryygj6ww</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="InnoDBCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.wvrxl1wgtpe8u1lyssbwwwqdy6tyosrg3b936x6qy5izw3uu2yvv88w72rf5"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.shk0sj43r0tqmblnvkd6d8hrlqgg50ih3z92wukzd0orl2abbdvmpk343c3x"><td>StarTenancy</td><td>InnoDBCompt</td><td>appnode</td><td>RUNNING</td><td>4.0</td><td>64.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:34:c8:ed</td><td>192.168.150.2</td><td>10.1.102.121</td><td>RESTORE_INSTANCE</td><td>2025-05-23</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.wvrxl1wgtpe8u1lyssbwwwqdy6tyosrg3b936x6qy5izw3uu2yvv88w72rf5</td><td>ocid1.instance.AK03317140.pcax10.shk0sj43r0tqmblnvkd6d8hrlqgg50ih3z92wukzd0orl2abbdvmpk343c3x</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="InnoDBCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.wvrxl1wgtpe8u1lyssbwwwqdy6tyosrg3b936x6qy5izw3uu2yvv88w72rf5"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.gqvjeff8fnpmngk9fef995zazq3vuhm7uccccrd7cbogrx3gl7yyjkf0gpb6"><td>StarTenancy</td><td>InnoDBCompt</td><td>mysql-apps</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:c9:4c:60</td><td>192.168.150.3</td><td>10.1.102.100</td><td>RESTORE_INSTANCE</td><td>2025-05-27</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.wvrxl1wgtpe8u1lyssbwwwqdy6tyosrg3b936x6qy5izw3uu2yvv88w72rf5</td><td>ocid1.instance.AK03317140.pcax10.gqvjeff8fnpmngk9fef995zazq3vuhm7uccccrd7cbogrx3gl7yyjkf0gpb6</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="InnoDBCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.wvrxl1wgtpe8u1lyssbwwwqdy6tyosrg3b936x6qy5izw3uu2yvv88w72rf5"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.8mxzu2qaia14rxu3c2iyux11ffjjx1xhwzq6q714uapq707uzsmscndpwz57"><td>StarTenancy</td><td>InnoDBCompt</td><td>mysql01</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:f7:03:68</td><td>192.168.151.2</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-05-27</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.wvrxl1wgtpe8u1lyssbwwwqdy6tyosrg3b936x6qy5izw3uu2yvv88w72rf5</td><td>ocid1.instance.AK03317140.pcax10.8mxzu2qaia14rxu3c2iyux11ffjjx1xhwzq6q714uapq707uzsmscndpwz57</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="InnoDBCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.wvrxl1wgtpe8u1lyssbwwwqdy6tyosrg3b936x6qy5izw3uu2yvv88w72rf5"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.xroasborthhlekf46zxs2v8u8iai4kksoeacgkibclicv85r04rnay0rjfpm"><td>StarTenancy</td><td>InnoDBCompt</td><td>mysql02</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:db:de:d9</td><td>192.168.151.3</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-05-30</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.wvrxl1wgtpe8u1lyssbwwwqdy6tyosrg3b936x6qy5izw3uu2yvv88w72rf5</td><td>ocid1.instance.AK03317140.pcax10.xroasborthhlekf46zxs2v8u8iai4kksoeacgkibclicv85r04rnay0rjfpm</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="InnoDBCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.wvrxl1wgtpe8u1lyssbwwwqdy6tyosrg3b936x6qy5izw3uu2yvv88w72rf5"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.1fuix9rk1eiyj98v831mskgsb3rh9638t1qce5z5axe3588v38u7orhlb549"><td>StarTenancy</td><td>InnoDBCompt</td><td>mysql03</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:53:e0:10</td><td>192.168.151.4</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-05-30</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.wvrxl1wgtpe8u1lyssbwwwqdy6tyosrg3b936x6qy5izw3uu2yvv88w72rf5</td><td>ocid1.instance.AK03317140.pcax10.1fuix9rk1eiyj98v831mskgsb3rh9638t1qce5z5axe3588v38u7orhlb549</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="ProdCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.elzeiht31vt1ismjyxnwwhfepjyft51xnuj45g56petx6rbw5ijrzj1605pj"><td>StarTenancy</td><td>ProdCompt</td><td>prodvm1</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:df:53:12</td><td>192.168.250.2</td><td>10.1.102.104</td><td>RESTORE_INSTANCE</td><td>2025-04-30</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm</td><td>ocid1.instance.AK03317140.pcax10.elzeiht31vt1ismjyxnwwhfepjyft51xnuj45g56petx6rbw5ijrzj1605pj</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="ProdCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.99d1z737qnz96e8q2co02x835hdioq91vw7ltmykaccns9m4gx211renp5ns"><td>StarTenancy</td><td>ProdCompt</td><td>prodvm2</td><td>RUNNING</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:8f:a9:6b</td><td>192.168.251.2</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-04-30</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm</td><td>ocid1.instance.AK03317140.pcax10.99d1z737qnz96e8q2co02x835hdioq91vw7ltmykaccns9m4gx211renp5ns</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="ProdCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.myhw3ad9otj9hn5um72tw0bh3ob6p06hu81fgyekdebsesqzwjxb0644r5ii"><td>StarTenancy</td><td>ProdCompt</td><td>vm101301</td><td>RUNNING</td><td>4.0</td><td>40.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:9f:d3:2a</td><td>192.168.251.4</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-10-13</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm</td><td>ocid1.instance.AK03317140.pcax10.myhw3ad9otj9hn5um72tw0bh3ob6p06hu81fgyekdebsesqzwjxb0644r5ii</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="ProdCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.iv8zx4oo0j62l7snrkyzhm3j29c9o7v9s8myv22clr4h9rqs8bh8dx8fg331"><td>StarTenancy</td><td>ProdCompt</td><td>Win19vm1</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:66:6f:cb</td><td>192.168.250.3</td><td>10.1.102.82</td><td>RESTORE_INSTANCE</td><td>2025-04-30</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm</td><td>ocid1.instance.AK03317140.pcax10.iv8zx4oo0j62l7snrkyzhm3j29c9o7v9s8myv22clr4h9rqs8bh8dx8fg331</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="ProdCompt"
-                                    data-state="RUNNING"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.0u9ataruc3yhdn860cla2f3fztturndmb9ytubou6pu7rgikqpzxusvcm4ac"><td>StarTenancy</td><td>ProdCompt</td><td>Win22vm2</td><td>RUNNING</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:10:9c:9c</td><td>192.168.251.3</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-04-30</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.ibz5wd1yuuyvucbco887g3y28fprdfh3uyyrj0014mflymxo7lfrn4g7qjkm</td><td>ocid1.instance.AK03317140.pcax10.0u9ataruc3yhdn860cla2f3fztturndmb9ytubou6pu7rgikqpzxusvcm4ac</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="Test1Compt"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.uk12d3b5vavcqwds4ljfwbyhnfg31woxy83bfp96ozrzbnyhd70sjrk1magf"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.gffqgucyk71jwxzb84zylrhyk7o1bb7tzclhon0ilt56uejm1qi6fhd16s9f"><td>StarTenancy</td><td>Test1Compt</td><td>test1vm1</td><td>STOPPED</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:ef:96:f4</td><td>192.168.248.2</td><td>10.1.102.126</td><td>RESTORE_INSTANCE</td><td>2025-05-02</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.uk12d3b5vavcqwds4ljfwbyhnfg31woxy83bfp96ozrzbnyhd70sjrk1magf</td><td>ocid1.instance.AK03317140.pcax10.gffqgucyk71jwxzb84zylrhyk7o1bb7tzclhon0ilt56uejm1qi6fhd16s9f</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="Test1Compt"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.uk12d3b5vavcqwds4ljfwbyhnfg31woxy83bfp96ozrzbnyhd70sjrk1magf"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.hobei84vzjxkrwxm9p7mkntngxyttn163zftokmhgolqgjgaghef25rfxvp8"><td>StarTenancy</td><td>Test1Compt</td><td>test1vm2</td><td>STOPPED</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:e0:97:a5</td><td>192.168.249.2</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-05-02</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.uk12d3b5vavcqwds4ljfwbyhnfg31woxy83bfp96ozrzbnyhd70sjrk1magf</td><td>ocid1.instance.AK03317140.pcax10.hobei84vzjxkrwxm9p7mkntngxyttn163zftokmhgolqgjgaghef25rfxvp8</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="Test1Compt"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.uk12d3b5vavcqwds4ljfwbyhnfg31woxy83bfp96ozrzbnyhd70sjrk1magf"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.bbqpf3snd6a3hqhuyqb6kamu3d2kxc4nujeo3pr7mj7zbppheyk55r8ptho8"><td>StarTenancy</td><td>Test1Compt</td><td>WIN2019vm1</td><td>STOPPED</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:b5:2c:ec</td><td>192.168.248.3</td><td>10.1.102.122</td><td>RESTORE_INSTANCE</td><td>2025-05-02</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.uk12d3b5vavcqwds4ljfwbyhnfg31woxy83bfp96ozrzbnyhd70sjrk1magf</td><td>ocid1.instance.AK03317140.pcax10.bbqpf3snd6a3hqhuyqb6kamu3d2kxc4nujeo3pr7mj7zbppheyk55r8ptho8</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="Test1Compt"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-3"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.uk12d3b5vavcqwds4ljfwbyhnfg31woxy83bfp96ozrzbnyhd70sjrk1magf"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.fpgxvll2z71k38nkqyjgiugtospj6l9dk5bih5euvbzfvpbguj4xfxhi4cfp"><td>StarTenancy</td><td>Test1Compt</td><td>WIN2022vm2</td><td>STOPPED</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-3</td><td>00:13:97:15:af:9c</td><td>192.168.249.3</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-05-02</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.uk12d3b5vavcqwds4ljfwbyhnfg31woxy83bfp96ozrzbnyhd70sjrk1magf</td><td>ocid1.instance.AK03317140.pcax10.fpgxvll2z71k38nkqyjgiugtospj6l9dk5bih5euvbzfvpbguj4xfxhi4cfp</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="Test2Compt"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-2"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.yglfpjiqxkasuckztliqfmsy6b8tsly78lvr1f0lhyjk3xx6jw5h68pshrqg"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.uukf88xdztfnzoejg7mi123jo3h5wwagmwqcic9liifathzr0ei545w5ticc"><td>StarTenancy</td><td>Test2Compt</td><td>vm1</td><td>STOPPED</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-2</td><td>00:13:97:8e:d7:ab</td><td>192.168.246.2</td><td>10.1.102.77</td><td>RESTORE_INSTANCE</td><td>2025-05-02</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.yglfpjiqxkasuckztliqfmsy6b8tsly78lvr1f0lhyjk3xx6jw5h68pshrqg</td><td>ocid1.instance.AK03317140.pcax10.uukf88xdztfnzoejg7mi123jo3h5wwagmwqcic9liifathzr0ei545w5ticc</td>
-                                </tr>
-                                <tr class='instance-row' 
-                                    data-tenancy="StarTenancy"
-                                    data-compartment="Test2Compt"
-                                    data-state="STOPPED"
-                                    data-fault-domain="FAULT-DOMAIN-1"
-                                    data-compartment-id="ocid1.compartment.AK03317140.pcax10.yglfpjiqxkasuckztliqfmsy6b8tsly78lvr1f0lhyjk3xx6jw5h68pshrqg"
-                                    data-instance-id="ocid1.instance.AK03317140.pcax10.v92eslegrh0pvd1gym150l56ho0he74ughoibkwwwhr7d4leai9ocu6dmd5t"><td>StarTenancy</td><td>Test2Compt</td><td>vm2</td><td>STOPPED</td><td>2.0</td><td>20.0</td><td>AD-1</td><td>FAULT-DOMAIN-1</td><td>00:13:97:48:b8:fa</td><td>192.168.247.2</td><td>N/A</td><td>RESTORE_INSTANCE</td><td>2025-05-02</td><td>VM.PCAStandard.E5.Flex</td><td>ocid1.compartment.AK03317140.pcax10.yglfpjiqxkasuckztliqfmsy6b8tsly78lvr1f0lhyjk3xx6jw5h68pshrqg</td><td>ocid1.instance.AK03317140.pcax10.v92eslegrh0pvd1gym150l56ho0he74ughoibkwwwhr7d4leai9ocu6dmd5t</td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -2554,12 +1588,12 @@
         // --- End of Scroll to Bottom Button Logic ---
 
         // Store tenancy-compartment and tenancy-fault-domain mapping for dynamic filtering
-        const tenancyCompartments = {"AcmeCorpTenancy": ["ROOT", "KK_Compartment_1"], "BumblebeeTenancy": ["ROOT", "Compt_CBP", "Compt_Dav", "Compt_Kit", "Compt_Muni", "Compt_PCW", "Compt_PCY"], "ClouderaTenancy": ["ROOT"], "DemoTenancy": ["ROOT", "Dashboard_demo", "test_dev"], "StarTenancy": ["ROOT", "DB23aiCompt", "InnoDBCompt", "ProdCompt", "Test1Compt", "Test2Compt"], "temptest": ["ROOT"]};
-        const tenancyFaultDomains = {"AcmeCorpTenancy": ["FAULT-DOMAIN-1", "FAULT-DOMAIN-2", "FAULT-DOMAIN-3"], "BumblebeeTenancy": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"], "ClouderaTenancy": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"], "DemoTenancy": ["FAULT-DOMAIN-1", "FAULT-DOMAIN-2", "FAULT-DOMAIN-3"], "StarTenancy": ["FAULT-DOMAIN-2", "FAULT-DOMAIN-3", "FAULT-DOMAIN-1"], "temptest": []};
+        const tenancyCompartments = {"AcmeCorpTenancy": ["ROOT"], "BumblebeeTenancy": ["ROOT"], "ClouderaTenancy": ["ROOT"], "DemoTenancy": ["ROOT"], "StarTenancy": ["ROOT"], "temptest": ["ROOT"]};
+        const tenancyFaultDomains = {"AcmeCorpTenancy": [], "BumblebeeTenancy": [], "ClouderaTenancy": [], "DemoTenancy": [], "StarTenancy": [], "temptest": []};
 
         // --- Add variables for OCPU/Memory stats if needed for graphs ---
-        const ocpuMemoryStats = {"total_capacity_ocpus": 1104, "total_capacity_memory_gb": 6528.0, "total_allocated_ocpus": 486, "total_allocated_memory_gb": 4402.0, "total_free_ocpus": 618, "total_free_memory_gb": 2126.0, "fd_capacity_ocpus": 368, "fd_capacity_memory_gb": 2176.0, "fault_domain_allocated_ocpus": {"FAULT-DOMAIN-1": 156, "FAULT-DOMAIN-2": 181, "FAULT-DOMAIN-3": 149}, "fault_domain_allocated_memory": {"FAULT-DOMAIN-1": 1366.0, "FAULT-DOMAIN-2": 1726.0, "FAULT-DOMAIN-3": 1310.0}, "fault_domain_free_ocpus": {"FAULT-DOMAIN-3": 219, "FAULT-DOMAIN-1": 212, "FAULT-DOMAIN-2": 187}, "fault_domain_free_memory": {"FAULT-DOMAIN-3": 866.0, "FAULT-DOMAIN-1": 810.0, "FAULT-DOMAIN-2": 450.0}, "number_of_fault_domains": 3};
-        const attributeCounts = {"states": {"STOPPED": 16, "STARTING": 2, "RUNNING": 89}, "tenancies": {"AcmeCorpTenancy": 8, "BumblebeeTenancy": 46, "ClouderaTenancy": 15, "DemoTenancy": 16, "StarTenancy": 22, "temptest": 0}, "compartments": {"[AcmeCorpTenancy] ROOT": 6, "[AcmeCorpTenancy] KK_Compartment_1": 2, "[BumblebeeTenancy] ROOT": 0, "[BumblebeeTenancy] Compt_CBP": 2, "[BumblebeeTenancy] Compt_Dav": 34, "[BumblebeeTenancy] Compt_Kit": 3, "[BumblebeeTenancy] Compt_Muni": 2, "[BumblebeeTenancy] Compt_PCW": 1, "[BumblebeeTenancy] Compt_PCY": 4, "[ClouderaTenancy] ROOT": 15, "[DemoTenancy] ROOT": 0, "[DemoTenancy] Dashboard_demo": 3, "[DemoTenancy] test_dev": 13, "[StarTenancy] ROOT": 0, "[StarTenancy] DB23aiCompt": 5, "[StarTenancy] InnoDBCompt": 6, "[StarTenancy] ProdCompt": 5, "[StarTenancy] Test1Compt": 4, "[StarTenancy] Test2Compt": 2, "[temptest] ROOT": 0}, "fault_domains": {"FAULT-DOMAIN-1": 34, "FAULT-DOMAIN-2": 39, "FAULT-DOMAIN-3": 34}, "tenancy_compartments": {"AcmeCorpTenancy": ["ROOT", "KK_Compartment_1"], "BumblebeeTenancy": ["ROOT", "Compt_CBP", "Compt_Dav", "Compt_Kit", "Compt_Muni", "Compt_PCW", "Compt_PCY"], "ClouderaTenancy": ["ROOT"], "DemoTenancy": ["ROOT", "Dashboard_demo", "test_dev"], "StarTenancy": ["ROOT", "DB23aiCompt", "InnoDBCompt", "ProdCompt", "Test1Compt", "Test2Compt"], "temptest": ["ROOT"]}, "tenancy_fault_domains": {"AcmeCorpTenancy": ["FAULT-DOMAIN-1", "FAULT-DOMAIN-2", "FAULT-DOMAIN-3"], "BumblebeeTenancy": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"], "ClouderaTenancy": ["FAULT-DOMAIN-3", "FAULT-DOMAIN-2", "FAULT-DOMAIN-1"], "DemoTenancy": ["FAULT-DOMAIN-1", "FAULT-DOMAIN-2", "FAULT-DOMAIN-3"], "StarTenancy": ["FAULT-DOMAIN-2", "FAULT-DOMAIN-3", "FAULT-DOMAIN-1"], "temptest": []}, "ocpu_memory_stats": {"total_capacity_ocpus": 1104, "total_capacity_memory_gb": 6528.0, "total_allocated_ocpus": 486, "total_allocated_memory_gb": 4402.0, "total_free_ocpus": 618, "total_free_memory_gb": 2126.0, "fd_capacity_ocpus": 368, "fd_capacity_memory_gb": 2176.0, "fault_domain_allocated_ocpus": {"FAULT-DOMAIN-1": 156, "FAULT-DOMAIN-2": 181, "FAULT-DOMAIN-3": 149}, "fault_domain_allocated_memory": {"FAULT-DOMAIN-1": 1366.0, "FAULT-DOMAIN-2": 1726.0, "FAULT-DOMAIN-3": 1310.0}, "fault_domain_free_ocpus": {"FAULT-DOMAIN-3": 219, "FAULT-DOMAIN-1": 212, "FAULT-DOMAIN-2": 187}, "fault_domain_free_memory": {"FAULT-DOMAIN-3": 866.0, "FAULT-DOMAIN-1": 810.0, "FAULT-DOMAIN-2": 450.0}, "number_of_fault_domains": 3}, "total_instances": 107};
+        const ocpuMemoryStats = {"total_capacity_ocpus": 0, "total_capacity_memory_gb": 0.0, "total_allocated_ocpus": 0, "total_allocated_memory_gb": 0.0, "total_free_ocpus": 0, "total_free_memory_gb": 0.0, "fd_capacity_ocpus": 368, "fd_capacity_memory_gb": 2176.0, "fault_domain_allocated_ocpus": {}, "fault_domain_allocated_memory": {}, "fault_domain_free_ocpus": {}, "fault_domain_free_memory": {}, "number_of_fault_domains": 0};
+        const attributeCounts = {"states": {}, "tenancies": {"AcmeCorpTenancy": 0, "BumblebeeTenancy": 0, "ClouderaTenancy": 0, "DemoTenancy": 0, "StarTenancy": 0, "temptest": 0}, "compartments": {"[AcmeCorpTenancy] ROOT": 0, "[BumblebeeTenancy] ROOT": 0, "[ClouderaTenancy] ROOT": 0, "[DemoTenancy] ROOT": 0, "[StarTenancy] ROOT": 0, "[temptest] ROOT": 0}, "fault_domains": {}, "tenancy_compartments": {"AcmeCorpTenancy": ["ROOT"], "BumblebeeTenancy": ["ROOT"], "ClouderaTenancy": ["ROOT"], "DemoTenancy": ["ROOT"], "StarTenancy": ["ROOT"], "temptest": ["ROOT"]}, "tenancy_fault_domains": {"AcmeCorpTenancy": [], "BumblebeeTenancy": [], "ClouderaTenancy": [], "DemoTenancy": [], "StarTenancy": [], "temptest": []}, "ocpu_memory_stats": {"total_capacity_ocpus": 0, "total_capacity_memory_gb": 0.0, "total_allocated_ocpus": 0, "total_allocated_memory_gb": 0.0, "total_free_ocpus": 0, "total_free_memory_gb": 0.0, "fd_capacity_ocpus": 368, "fd_capacity_memory_gb": 2176.0, "fault_domain_allocated_ocpus": {}, "fault_domain_allocated_memory": {}, "fault_domain_free_ocpus": {}, "fault_domain_free_memory": {}, "number_of_fault_domains": 0}, "total_instances": 0};
         // --- End of variable declarations ---
 
         // --- ADD/REPLACE these lines to use the SANITIZED data ---
@@ -2570,14 +1604,14 @@
         // This method is robust against missing counts or extra keys like 'total' in attributeCounts.tenancies
         const tenancyDataForGraph = tenancyLabelsForGraph.map(label => (attributeCounts.tenancies || {})[label] || 0);
         const resourceUtilData = {
-            totalCapacityOcpus: 1104,
-            totalAllocatedOcpus: 486,
-            totalFreeOcpus: 618,
-            totalCapacityMemoryGb: 6528.0,
-            totalAllocatedMemoryGb: 4402.0,
-            totalFreeMemoryGb: 2126.0
+            totalCapacityOcpus: 0,
+            totalAllocatedOcpus: 0,
+            totalFreeOcpus: 0,
+            totalCapacityMemoryGb: 0.0,
+            totalAllocatedMemoryGb: 0.0,
+            totalFreeMemoryGb: 0.0
         };
-        const instanceDistributionData = {"name": "Resources", "children": [{"name": "AcmeCorpTenancy", "allocated_ocpus": 23.0, "allocated_ocpus_percentage": 2.1, "allocated_memory": 214.0, "allocated_memory_percentage": 3.3, "children": [{"name": "Allocated OCPUs", "value": 23.0, "percentage": 2.1, "tenancy": "AcmeCorpTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 214.0, "percentage": 3.3, "tenancy": "AcmeCorpTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "BumblebeeTenancy", "allocated_ocpus": 100.0, "allocated_ocpus_percentage": 9.1, "allocated_memory": 1056.0, "allocated_memory_percentage": 16.2, "children": [{"name": "Allocated OCPUs", "value": 100.0, "percentage": 9.1, "tenancy": "BumblebeeTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 1056.0, "percentage": 16.2, "tenancy": "BumblebeeTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "ClouderaTenancy", "allocated_ocpus": 248.0, "allocated_ocpus_percentage": 22.5, "allocated_memory": 1912.0, "allocated_memory_percentage": 29.3, "children": [{"name": "Allocated OCPUs", "value": 248.0, "percentage": 22.5, "tenancy": "ClouderaTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 1912.0, "percentage": 29.3, "tenancy": "ClouderaTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "DemoTenancy", "allocated_ocpus": 39.0, "allocated_ocpus_percentage": 3.5, "allocated_memory": 412.0, "allocated_memory_percentage": 6.3, "children": [{"name": "Allocated OCPUs", "value": 39.0, "percentage": 3.5, "tenancy": "DemoTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 412.0, "percentage": 6.3, "tenancy": "DemoTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "StarTenancy", "allocated_ocpus": 76.0, "allocated_ocpus_percentage": 6.9, "allocated_memory": 808.0, "allocated_memory_percentage": 12.4, "children": [{"name": "Allocated OCPUs", "value": 76.0, "percentage": 6.9, "tenancy": "StarTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 808.0, "percentage": 12.4, "tenancy": "StarTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "temptest", "allocated_ocpus": 0, "allocated_ocpus_percentage": 0.0, "allocated_memory": 0.0, "allocated_memory_percentage": 0.0, "children": [{"name": "Allocated OCPUs", "value": 0, "percentage": 0.0, "tenancy": "temptest", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 0.0, "percentage": 0.0, "tenancy": "temptest", "itemStyle": {"color": "#fac858"}}]}]};
+        const instanceDistributionData = {"name": "Resources", "children": [{"name": "AcmeCorpTenancy", "allocated_ocpus": 0, "allocated_ocpus_percentage": 0.0, "allocated_memory": 0.0, "allocated_memory_percentage": 0.0, "children": [{"name": "Allocated OCPUs", "value": 0, "percentage": 0.0, "tenancy": "AcmeCorpTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 0.0, "percentage": 0.0, "tenancy": "AcmeCorpTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "BumblebeeTenancy", "allocated_ocpus": 0, "allocated_ocpus_percentage": 0.0, "allocated_memory": 0.0, "allocated_memory_percentage": 0.0, "children": [{"name": "Allocated OCPUs", "value": 0, "percentage": 0.0, "tenancy": "BumblebeeTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 0.0, "percentage": 0.0, "tenancy": "BumblebeeTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "ClouderaTenancy", "allocated_ocpus": 0, "allocated_ocpus_percentage": 0.0, "allocated_memory": 0.0, "allocated_memory_percentage": 0.0, "children": [{"name": "Allocated OCPUs", "value": 0, "percentage": 0.0, "tenancy": "ClouderaTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 0.0, "percentage": 0.0, "tenancy": "ClouderaTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "DemoTenancy", "allocated_ocpus": 0, "allocated_ocpus_percentage": 0.0, "allocated_memory": 0.0, "allocated_memory_percentage": 0.0, "children": [{"name": "Allocated OCPUs", "value": 0, "percentage": 0.0, "tenancy": "DemoTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 0.0, "percentage": 0.0, "tenancy": "DemoTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "StarTenancy", "allocated_ocpus": 0, "allocated_ocpus_percentage": 0.0, "allocated_memory": 0.0, "allocated_memory_percentage": 0.0, "children": [{"name": "Allocated OCPUs", "value": 0, "percentage": 0.0, "tenancy": "StarTenancy", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 0.0, "percentage": 0.0, "tenancy": "StarTenancy", "itemStyle": {"color": "#fac858"}}]}, {"name": "temptest", "allocated_ocpus": 0, "allocated_ocpus_percentage": 0.0, "allocated_memory": 0.0, "allocated_memory_percentage": 0.0, "children": [{"name": "Allocated OCPUs", "value": 0, "percentage": 0.0, "tenancy": "temptest", "itemStyle": {"color": "#91cc75"}}, {"name": "Allocated Memory (GB)", "value": 0.0, "percentage": 0.0, "tenancy": "temptest", "itemStyle": {"color": "#fac858"}}]}]};
         // --- End of adding sanitized data ---
 
         // --- Define Color Scheme ---
@@ -2682,7 +1716,7 @@
                 // Use the pre-prepared labels and data arrays from Python
                 // These should be available as global JS variables injected by the Python script
                 const barLabels = ["AcmeCorpTenancy", "BumblebeeTenancy", "ClouderaTenancy", "DemoTenancy", "StarTenancy", "temptest"]; // Array of strings
-                const barData = [8, 46, 15, 16, 22, 0]; // Array of numbers
+                const barData = [0, 0, 0, 0, 0, 0]; // Array of numbers
 
                 // Prepare data for Resource Utilization Doughnut Chart
                 const totalCapacityOcpus = ocpuMemoryStats.total_capacity_ocpus || 0;
@@ -3102,7 +2136,7 @@
                 const rows = table.querySelectorAll('tbody tr');
                 if (searchTerm === '') {
                     rows.forEach(row => row.classList.remove('hidden'));
-                    updateVisibleCount(107); // Reset visible count
+                    updateVisibleCount(0); // Reset visible count
                     return;
                 }
                 let visibleCount = 0;
@@ -3123,7 +2157,7 @@
                 clearButton.classList.remove('show');
                 const rows = table.querySelectorAll('tbody tr');
                 rows.forEach(row => row.classList.remove('hidden'));
-                updateVisibleCount(107); // Reset visible count
+                updateVisibleCount(0); // Reset visible count
             });
         }
 
@@ -3324,7 +2358,7 @@
             document.getElementById('clear-instances').classList.remove('show');
 
             applyAllTab2Filters();
-            updateVisibleCount(107); // Reset visible count
+            updateVisibleCount(0); // Reset visible count
         }
 
         function applyAllTab2Filters() {
